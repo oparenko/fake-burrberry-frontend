@@ -1,4 +1,13 @@
 /*
+ * General styles
+ */
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*
  * Header
  */
 
@@ -9,4 +18,18 @@ header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #c6c6c6;
+}
+
+/* Product name */
+h1.product-name {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  font-family: 'Lora', serif;
+  font-size: 0.875rem;
+}
+
+.product-img-slider {
+  display: flex;
+  overflow-y: scroll;
 }

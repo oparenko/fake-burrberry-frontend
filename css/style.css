@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
 /*
  * Header
  */
@@ -34,7 +41,7 @@ header {
  * Product meta data + colour picker
  */
 
-.product-metadata {
+.product-metadata-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,12 +54,14 @@ header {
 .product-price {
   margin: 0;
   font-size: 1.125rem;
-  font-weight: 400;
+  line-height: 1.3125rem;
+  font-weight: normal;
 }
 
 .product-id {
   margin: 0;
   font-size: 0.75rem;
+  line-height: 0.875rem;
   color: #171717;
 }
 
@@ -75,12 +84,18 @@ header {
   color: #171717;
 }
 
+.product-colour-picker {
+  display: flex;
+}
+
 .product-colour-picker-black,
 .product-colour-picker-honey {
+  display: inline-block;
   margin-right: 1rem;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+  line-height: 1;
 }
 
 .product-colour-picker-black {
@@ -91,8 +106,54 @@ header {
   background-color: #cfa880;
 }
 
+.product-colour-picker-honey.active {
+  border: 1px solid #232122;
+}
+
 /* Separator line */
-hr {
-  border-top: solid 1px #c6c6c6;
+.separator {
   margin: 2rem 1rem;
+  border-top: solid 1px #c6c6c6;
+}
+
+
+/*
+ * Product actions
+ */
+
+.product-buttons-wrapper {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.button {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-transform: uppercase;
+}
+
+.button.primary,
+.button.secondary {
+  width: 100%;
+  height: 2.75rem;
+  border-radius: 0.125rem;
+}
+
+.button.primary {
+  background-color: #171717;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.button.secondary {
+  border: solid 1px #999;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+}
+
+.button.tertiary {
+  text-align: left;
+  background-color: #fff;
 }

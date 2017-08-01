@@ -10,10 +10,11 @@
  * Header
  */
 
-header {
+.header-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #c6c6c6;
@@ -204,11 +205,12 @@ header {
   margin-bottom: 2rem;
   margin-left: 1rem;
   font-family: 'Lora', serif;
-  line-height: 1.71;
+  font-size: .875rem;
+  line-height: 1.5rem;
 }
 
 .product-characteristics {
-  margin-top: 0.875rem;
+  margin-top: 1.5rem;
   list-style-type: none;
 }
 
@@ -225,7 +227,7 @@ header {
 
  .recommended-section-title {
    display: inline-block;
-   margin-bottom: 1.9375rem;
+   margin-bottom: 1.5rem;
    padding-bottom: 8px;
    border-bottom: 1px solid #171717;
    font-family: "Raleway", sans-serif;
@@ -263,7 +265,7 @@ header {
    font-family: "Lora", serif;
    font-size: 1rem;
    font-weight: 400;
-   line-height: 1.5;
+   line-height: 1.1875rem;
    color: #111;
  }
 

@@ -45,16 +45,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin: 1rem;
   font-family: 'Raleway', sans-serif;
 }
 
 .product-price {
   margin: 0;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   font-weight: normal;
 }
 

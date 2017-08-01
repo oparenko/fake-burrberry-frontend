@@ -157,3 +157,34 @@ header {
   text-align: left;
   background-color: #fff;
 }
+
+
+/*
+ * Product details
+ */
+
+.product-details-wrapper {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.product-accordeon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.875rem 1rem;
+  border-top: solid 1px #c6c6c6;
+}
+
+.product-accordeon:last-of-type {
+  border-bottom: solid 1px #c6c6c6;
+}
+
+.accordeon-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #171717;
+}

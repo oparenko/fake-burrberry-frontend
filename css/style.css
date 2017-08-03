@@ -83,8 +83,8 @@
   height: 2.5rem;
   margin-right: 1rem;
   line-height: 1;
-  border-radius: 50%;
   border: none;
+  border-radius: 50%;
 }
 
 .colour-picker__button--black {
@@ -125,31 +125,32 @@
 }
 
 .actions__button--primary {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
   color: #fff;
   background-color: #171717;
   border: solid 1px #171717;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   border-radius: .125rem;
 }
+
 .actions__button--secondary {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-radius: .125rem;
   margin-bottom: 1.5rem;
   background-color: #fff;
   border: solid 1px #999;
+  border-radius: .125rem;
 }
 
 .actions__button--tertiary {
+  padding: 0;
   line-height: 1rem;
   text-align: left;
   background-color: #fff;
   border: none;
-  padding: 0;
 }
 
 /*
@@ -177,20 +178,19 @@
   background-origin: content-box;
 }
 
-
 .details__dropdown--active {
   background-image: url(../img/triangle-up.svg);
   border-bottom: 0;
 }
 
 .details__title {
+  margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
   color: #171717;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .details__description {
@@ -207,9 +207,9 @@
 }
 
 .details__characteristics {
+  padding: 0;
   margin-top: 1.5rem;
   list-style-type: none;
-  padding: 0;
 }
 
 /*
@@ -275,12 +275,12 @@
 }
 
 .recommended__product-price {
+  margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: .75rem;
   font-weight: 400;
   line-height: .875rem;
   color: #999;
-  margin: 0;
 }
 
 /*
@@ -307,9 +307,9 @@
 }
 
 .more__list {
-  list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .more__item {
@@ -343,6 +343,7 @@
 
 .footer__button {
   display: block;
+  padding: 0;
   margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
   font-size: .75rem;
@@ -352,7 +353,6 @@
   color: #999;
   background-color: inherit;
   border: none;
-  padding: 0;
 }
 
 .footer__button:last-of-type {
@@ -379,4 +379,3 @@
   line-height: 1.0625rem;
   color: #171717;
   text-decoration: none;
-}

@@ -252,6 +252,10 @@
   padding-bottom: 0;
 }
 
+.recommended__link {
+  text-decoration: none;
+}
+
 .recommended__product-image {
   height: 174px;
   max-width: 100%;

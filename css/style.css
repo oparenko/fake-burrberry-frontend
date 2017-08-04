@@ -4,20 +4,20 @@
 
 .header {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: solid 1px #c6c6c6;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Product name */
 
 .title {
   margin: 1rem;
-  font-family: "Lora", "Times New Roman", serif;
-  font-size: 1.25rem;
   font-weight: 400;
+  font-size: 1.25rem;
+  font-family: "Lora", "Times New Roman", serif;
   line-height: 1.5rem;
 }
 
@@ -34,26 +34,26 @@
 
 .metadata {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 1rem;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  justify-content: space-between;
-  align-items: center;
   line-height: 0;
 }
 
 .metadata__price {
   margin: 0;
-  font-size: 1rem;
   font-weight: normal;
+  font-size: 1rem;
   line-height: 1.1875rem;
 }
 
 .metadata__id {
   margin: 0;
-  font-size: .75rem;
-  font-weight: normal;
-  line-height: 1rem;
   color: #171717;
+  font-weight: normal;
+  font-size: .75rem;
+  line-height: 1rem;
 }
 
 /* Colour picker */
@@ -67,11 +67,11 @@
 .colour-picker__description {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  font-weight: 400;
-  line-height: 1rem;
   color: #171717;
+  font-weight: 400;
+  font-size: .75rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: 1rem;
 }
 
 .colour-picker__button-wrapper {
@@ -80,15 +80,15 @@
 
 .colour-picker__button {
   display: inline-block;
+  overflow: hidden;
+  margin-right: 1rem;
   width: 2.5rem;
   height: 2.5rem;
-  margin-right: 1rem;
-  line-height: 1;
   border: none;
   border-radius: 50%;
   text-indent: -9999px;
   white-space: nowrap;
-  overflow: hidden;
+  line-height: 1;
 }
 
 .colour-picker__button--black {
@@ -122,39 +122,39 @@
 
 .actions__button {
   display: block;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  line-height: 0.875rem;
   text-transform: uppercase;
+  font-size: .75rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: 0.875rem;
 }
 
 .actions__button--primary {
-  width: 100%;
+  margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  color: #fff;
-  background-color: #171717;
+  width: 100%;
   border: solid 1px #171717;
   border-radius: .125rem;
+  background-color: #171717;
+  color: #fff;
 }
 
 .actions__button--secondary {
-  width: 100%;
+  margin-bottom: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
-  background-color: #fff;
+  width: 100%;
   border: solid 1px #999;
   border-radius: .125rem;
+  background-color: #fff;
 }
 
 .actions__button--tertiary {
   padding: 0;
-  line-height: 1rem;
-  text-align: left;
-  background-color: #fff;
   border: none;
+  background-color: #fff;
+  text-align: left;
+  line-height: 1rem;
 }
 
 /*
@@ -168,21 +168,21 @@
 
 .details__dropdown {
   display: block;
-  width: 100%;
   padding: 2rem 1rem;
-  text-align: left;
-  background-color: #fff;
+  width: 100%;
   border-top: solid 1px #c6c6c6;
   border-right: none;
   border-bottom: solid 1px #c6c6c6;
   border-left: none;
+  background-color: #fff;
+  text-align: left;
 }
 
 .details__dropdown:after {
-  content: url(../img/triangle.svg);
   position: absolute;
   right: 1rem;
   margin-top: -1.25rem;
+  content: url(../img/triangle.svg);
 }
 
 .details__dropdown--active {
@@ -195,26 +195,26 @@
 
 .details__title {
   margin: 0;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.25rem;
   color: #171717;
   text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: 1.25rem;
 }
 
 .details__description {
   margin-right: 1rem;
   margin-bottom: 2rem;
   margin-left: 1rem;
-  font-family: "Lora", "Times New Roman", serif;
   font-size: .875rem;
+  font-family: "Lora", "Times New Roman", serif;
   line-height: 1.5rem;
 }
 
 .details__description p, ul, li {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .details__description ul {
@@ -233,28 +233,28 @@
 
 .recommended__title {
   display: inline-block;
-  padding-bottom: 8px;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.19;
-  text-transform: uppercase;
-  vertical-align: baseline;
+  padding-bottom: 8px;
   border-bottom: 1px solid #171717;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: 1.19;
 }
 
 .recommended__products {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .recommended__product-card {
-  padding-bottom: 2rem;
   flex-basis: 8.125rem;
+  padding-bottom: 2rem;
 }
 
 .recommended__product-card:nth-last-of-type(-n+2) {
@@ -274,20 +274,20 @@
 .recommended__product-title {
   margin-top: .5rem;
   margin-bottom: .5rem;
-  font-family: "Lora", "Times New Roman", serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.1875rem;
   color: #111;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Lora", "Times New Roman", serif;
+  line-height: 1.1875rem;
 }
 
 .recommended__product-price {
   margin: 0;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  font-weight: 400;
-  line-height: .875rem;
   color: #999;
+  font-weight: 400;
+  font-size: .75rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: .875rem;
 }
 
 /*
@@ -302,20 +302,20 @@
 
 .more__title {
   display: inline-block;
-  padding-bottom: 8px;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.1875rem;
-  text-transform: uppercase;
+  padding-bottom: 8px;
   border-bottom: 1px solid #171717;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: 1.1875rem;
 }
 
 .more__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -329,12 +329,12 @@
 }
 
 .more__link {
-  font-family: "Lora", "Times New Roman", serif;
-  font-size: .875rem;
-  font-style: italic;
-  line-height: 1.0625rem;
   color: #171717;
   text-decoration: none;
+  font-style: italic;
+  font-size: .875rem;
+  font-family: "Lora", "Times New Roman", serif;
+  line-height: 1.0625rem;
 }
 
 /*
@@ -342,23 +342,22 @@
  */
 
 .footer {
-  padding: 2rem 1rem 2rem 1rem;
   margin-top: 4rem;
+  padding: 2rem 1rem 2rem 1rem;
   background-color: #f3f3f3;
 }
 
 .footer__button {
   display: block;
-  padding: 0;
   margin-bottom: 1rem;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  font-weight: 400;
-  font-weight: normal;
-  line-height: 1rem;
-  color: #999;
-  background-color: inherit;
+  padding: 0;
   border: none;
+  background-color: inherit;
+  color: #999;
+  font-weight: 400;
+  font-size: .75rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: 1rem;
 }
 
 .footer__button:last-of-type {
@@ -372,16 +371,17 @@
 .need-help__title {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
   font-weight: bold;
+  font-size: 1rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   line-height: 1.1875rem;
 }
 
 .need-help__link {
-  font-family: "Lora", "Times New Roman", serif;
-  font-size: .875rem;
-  font-style: italic;
-  line-height: 1.0625rem;
   color: #171717;
   text-decoration: none;
+  font-style: italic;
+  font-size: .875rem;
+  font-family: "Lora", "Times New Roman", serif;
+  line-height: 1.0625rem;
+}

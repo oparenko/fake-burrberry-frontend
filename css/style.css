@@ -19,7 +19,7 @@
   font-family: "Lora", "Times New Roman", serif;
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5rem;
 }
 
 /* Product slider */
@@ -39,6 +39,7 @@
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   justify-content: space-between;
   align-items: center;
+  line-height: 0;
 }
 
 .metadata__price {
@@ -51,6 +52,7 @@
 .metadata__id {
   margin: 0;
   font-size: .75rem;
+  font-weight: normal;
   line-height: 1rem;
   color: #171717;
 }
@@ -267,8 +269,8 @@
 }
 
 .recommended__product-image {
-  height: 174px;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 

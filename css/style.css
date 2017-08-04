@@ -313,22 +313,9 @@
   line-height: 1.1875rem;
 }
 
-.more__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.more__item {
-  margin-bottom: 1rem;
-  line-height: 1;
-}
-
-.more__item:last-of-type {
-  margin-bottom: 0;
-}
-
 .more__link {
+  display: block;
+  margin-bottom: 1rem;
   color: #171717;
   text-decoration: none;
   font-style: italic;
@@ -336,6 +323,11 @@
   font-family: "Lora", "Times New Roman", serif;
   line-height: 1.0625rem;
 }
+
+.more__link:last-of-type {
+  margin-bottom: 0;
+}
+
 
 /*
  * Footer

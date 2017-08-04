@@ -7,7 +7,6 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: solid 1px #c6c6c6;
-  box-sizing: border-box;
   justify-content: center;
   align-items: center;
 }
@@ -244,7 +243,6 @@
   text-transform: uppercase;
   vertical-align: baseline;
   border-bottom: 1px solid #171717;
-  box-sizing: border-box;
 }
 
 .recommended__products {
@@ -256,7 +254,6 @@
 
 .recommended__product-card {
   padding-bottom: 2rem;
-  box-sizing: border-box;
   flex-basis: 8.125rem;
 }
 
@@ -348,7 +345,6 @@
   padding: 2rem 1rem 2rem 1rem;
   margin-top: 4rem;
   background-color: #f3f3f3;
-  box-sizing: border-box;
 }
 
 .footer__button {

@@ -306,6 +306,7 @@
 }
 
 .details__shipping {
+  display: none;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
 }
@@ -350,6 +351,10 @@
   }
 
   .details__shipping-img {
+    display: block;
+  }
+
+  .details__shipping {
     display: block;
   }
 }
@@ -421,6 +426,18 @@
   font-size: .75rem;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   line-height: .875rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .recommended {
+    margin-right: 0;
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+
+  .recommended__title {
+    margin-bottom: 1rem;
+  }
 }
 
 /*

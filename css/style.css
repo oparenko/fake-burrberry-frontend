@@ -25,7 +25,10 @@
 /* Product name */
 
 .title {
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
   font-weight: 400;
   font-size: 1.25rem;
   font-family: "Lora", "Times New Roman", serif;
@@ -35,9 +38,9 @@
 @media screen and (min-width: 48rem) {
   .title {
     margin-top: 1.5rem;
-    margin-left: 0.5rem;
+    margin-left: 0;
     margin-bottom: 1.5rem;
-    margin-right: 0.5rem;
+    margin-right: 0;
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
@@ -48,6 +51,34 @@
 .img-slider {
   display: flex;
   overflow-y: scroll;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.img-slider__img {
+  width: 300px;
+  height: 400px;
+}
+
+@media screen and (min-width: 48rem) {
+  .img-slider {
+    width: inherit;
+    position: inherit;
+    left: inherit;
+    right: inherit;
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+
+  .img-slider__img {
+    width: 432px;
+    height: 576px;
+  }
 }
 
 /*
@@ -76,6 +107,12 @@
   font-weight: normal;
   font-size: .75rem;
   line-height: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .metadata {
+    margin: 0;
+  }
 }
 
 /* Colour picker */
@@ -125,12 +162,26 @@
   border: 1px solid #232122;
 }
 
+@media screen and (min-width: 48rem) {
+  .colour-picker {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 /* Separator line */
 
 .separator {
   margin: 2rem 1rem;
   border-top: none;
   border-bottom: solid 1px #c6c6c6;
+}
+
+@media screen and (min-width: 48rem) {
+  .separator {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 /*
@@ -177,6 +228,13 @@
   background-color: #fff;
   text-align: left;
   line-height: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .actions {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 /*

@@ -667,8 +667,8 @@
 @media screen and (min-width: 48rem) {
   .footer {
     margin-top: 0;
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 0;
+    padding-left: 0;
   }
   .footer__navigation {
     display: block;

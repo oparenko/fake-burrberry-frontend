@@ -28,7 +28,7 @@
   margin-top: 1rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
-  margin-left: 0.5rem;
+  margin-left: .5rem;
   font-weight: 400;
   font-size: 1.25rem;
   font-family: "Lora", "Times New Roman", serif;
@@ -61,8 +61,8 @@
 }
 
 .img-slider__img {
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 48rem) {
@@ -76,8 +76,9 @@
   }
 
   .img-slider__img {
-    width: 432px;
     height: 576px;
+    width: auto;
+    flex-shrink: 0;
   }
 }
 
@@ -89,7 +90,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-right: .5rem;
+  margin-bottom: 1rem;
+  margin-left: .5rem;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   line-height: 0;
 }
@@ -119,8 +123,8 @@
 
 .colour-picker {
   margin-top: 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
 }
 
 .colour-picker__description {
@@ -172,7 +176,10 @@
 /* Separator line */
 
 .separator {
-  margin: 2rem 1rem;
+  margin-top: 2rem;
+  margin-right: .5rem;
+  margin-bottom: 2rem;
+  margin-left: .5rem;
   border-top: none;
   border-bottom: solid 1px #c6c6c6;
 }
@@ -189,8 +196,8 @@
  */
 
 .actions {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
 }
 
 .actions__button {
@@ -248,14 +255,22 @@
 
 .details__dropdown {
   display: block;
-  padding: 2rem 1rem;
-  width: 100%;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
   border-top: solid 1px #c6c6c6;
   border-right: none;
   border-bottom: solid 1px #c6c6c6;
   border-left: none;
   background-color: #fff;
   text-align: left;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .details__dropdown:after {
@@ -284,9 +299,9 @@
 }
 
 .details__description {
-  margin-right: 1rem;
+  margin-right: .5rem;
   margin-bottom: 2rem;
-  margin-left: 1rem;
+  margin-left: .5rem;
   font-size: .875rem;
   font-family: "Lora", "Times New Roman", serif;
   line-height: 1.5rem;
@@ -314,7 +329,8 @@
 .details__shipping h5 {
   margin-top: 0;
   margin-bottom: 0.25rem;
-  line-height: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   font-weight: bold;
 }
 
@@ -328,7 +344,7 @@
 
   .details {
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .details__dropdown {
@@ -338,6 +354,11 @@
     padding-left: 0;
     width: 100%;
     border: none;
+    position: static;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .details__dropdown:after {
@@ -352,6 +373,8 @@
 
   .details__shipping-img {
     display: block;
+    width: 100%;
+    height: auto;
   }
 
   .details__shipping {
@@ -364,9 +387,8 @@
  */
 
 .recommended {
-  margin-right: 1rem;
-  margin-bottom: 3rem;
-  margin-left: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
 }
 
 .recommended__title {
@@ -391,12 +413,7 @@
 }
 
 .recommended__product-card {
-  flex-basis: 8.125rem;
   padding-bottom: 2rem;
-}
-
-.recommended__product-card:nth-last-of-type(-n+2) {
-  padding-bottom: 0;
 }
 
 .recommended__link {
@@ -431,7 +448,7 @@
 @media screen and (min-width: 48rem) {
   .recommended {
     margin-right: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     margin-left: 0;
   }
 
@@ -445,9 +462,9 @@
  */
 
 .more {
-  margin-top: 3rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
 }
 
 .more__title {
@@ -508,6 +525,7 @@
   line-height: 0.875rem;
   color: #171717;
   text-transform: uppercase;
+  font-size: 0.75rem;
 }
 
 .footer__navigation-link {
@@ -521,6 +539,10 @@
 
 .footer__navigation-link:last-of-type {
   padding-bottom: 0;
+}
+
+.footer__preferences {
+  display: block;
 }
 
 .footer__button {
@@ -564,8 +586,9 @@
 
 @media screen and (min-width: 48rem) {
   .footer {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-top: 0;
   }
 
   .footer__navigation {
@@ -576,8 +599,11 @@
     display: none;
   }
 
+  .footer__preferences {
+    display: flex;
+  }
+
   .footer__button {
-    display: inline-block;
     margin-right: 1.5rem;
     margin-bottom: 0;
 }

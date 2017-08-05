@@ -461,10 +461,8 @@
 }
 
 .recommended__product-card {
+  display: block;
   padding-bottom: 2rem;
-}
-
-.recommended__link {
   text-decoration: none;
 }
 
@@ -570,7 +568,10 @@
 
 .footer {
   margin-top: 4rem;
-  padding: 2rem 1rem 2rem 1rem;
+  padding-top: 2rem;
+  padding-right: .5rem;
+  padding-bottom: 2rem;
+  padding-left: .5rem;
 
   background-color: #f3f3f3;
 }

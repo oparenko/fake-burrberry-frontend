@@ -16,12 +16,12 @@ const Header = styled.header`
   }
 `;
 
-const HeaderLink = styled.a`line-height: 0;`;
+const Link = styled.a`line-height: 0;`;
 
 export default () => (
   <Header>
-    <HeaderLink href="/">
+    <Link href="/">
       <img src={logo} alt="Burrberry Logo" />
-    </HeaderLink>
+    </Link>
   </Header>
 );

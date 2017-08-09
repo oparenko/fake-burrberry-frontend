@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Helmet } from 'react-helmet';
 
 import Header from "./Header.jsx";
-import Main from "./Main";
+import Main from "./Product/Show/index.jsx";
 import Footer from "./Footer.jsx";
 
 class App extends Component {

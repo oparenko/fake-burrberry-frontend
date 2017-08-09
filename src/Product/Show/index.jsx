@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Slider from './Slider.jsx';
 import './Main.css';
 
 class Main extends Component {
@@ -9,14 +9,7 @@ class Main extends Component {
         <div className="container">
           <h1 className="title">Long Cotton Gabardine Car Coat</h1>
           <div className="row">
-            <div className="col-xs-12 col-md-7">
-              <section className="img-slider">
-                <img className="img-slider__img" src="img/Long-Cotton-Gabardine-Car-Coat-1.jpg" srcset="../Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x" alt="Long Cotton Gabardine Car Coat"/>
-                <img className="img-slider__img" src="img/Long-Cotton-Gabardine-Car-Coat-2.jpg" srcset="img/Long-Cotton-Gabardine-Car-Coat-2@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-2@3x.jpg 3x" alt="Long Cotton Gabardine Car Coat"/>
-                <img className="img-slider__img" src="img/Long-Cotton-Gabardine-Car-Coat-3.jpg" srcset="img/Long-Cotton-Gabardine-Car-Coat-3@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-3@3x.jpg 3x" alt="Long Cotton Gabardine Car Coat"/>
-                <img className="img-slider__img" src="img/Long-Cotton-Gabardine-Car-Coat-4.jpg" srcset="img/Long-Cotton-Gabardine-Car-Coat-4@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-4@3x.jpg 3x" alt="Long Cotton Gabardine Car Coat"/>
-              </section>
-            </div>
+            <Slider />
             <div className="col-xs-12 col-md-5">
               <section className="metadata">
                 <h2 className="metadata__price">110 000 руб.</h2>

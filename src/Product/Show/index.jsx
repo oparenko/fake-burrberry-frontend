@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import Title from './Title.jsx';
 import Slider from './Slider.jsx';
+import Actions from './Actions.jsx';
 import './Main.css';
 
 class Main extends Component {
@@ -29,11 +30,7 @@ class Main extends Component {
                   </div>
                 </section>
                 <hr className="separator"/>
-                <section className="actions">
-                  <button className="actions__button actions__button--primary" type="button">Select a size</button>
-                  <button className="actions__button actions__button--secondary" type="button">Find in store</button>
-                  <button className="actions__button actions__button--tertiary" type="button">Need size help?</button>
-                </section>
+                <Actions />
               </div>
             </div>
             <section className="details">

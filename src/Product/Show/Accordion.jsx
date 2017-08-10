@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import Divider from './Divider.jsx';
 import triangle from 'triangle.svg';

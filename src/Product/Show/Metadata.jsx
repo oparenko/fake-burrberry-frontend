@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Colors from './Colors.jsx';
+import Actions from './Actions.jsx';
+import Divider from './Divider.jsx';
 
 const Metadata = styled.section`
   display: flex;
@@ -37,8 +40,13 @@ const Id = styled.p`
 `;
 
 export default () => (
-  <Metadata>
-    <Price>110 000 руб.</Price>
-    <Id>Item 39428531</Id>
-  </Metadata>
+  <div className="col-xs-12 col-md-5">
+    <Metadata>
+      <Price>110 000 руб.</Price>
+      <Id>Item 39428531</Id>
+    </Metadata>
+    <Colors />
+    <Actions />
+    <Divider />
+  </div>
 );

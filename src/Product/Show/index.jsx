@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Title from './Title.jsx';
 import Slider from './Slider.jsx';
 import Metadata from './Metadata.jsx';
+import Colors from './Colors.jsx'
 import Actions from './Actions.jsx';
 import './Main.css';
 
@@ -20,14 +21,7 @@ class Main extends Component {
               <Slider />
               <div className="col-xs-12 col-md-5">
                 <Metadata />
-                <section className="colour-picker">
-                  <p className="colour-picker__description">Colour: Honey</p>
-                  <div className="colour-picker__button-wrapper">
-                    <button className="colour-picker__button colour-picker__button--black" type="button">Change colour to black</button>
-                    <button className="colour-picker__button colour-picker__button--honey colour-picker__button--active" type="button">Change colour to honey</button>
-                  </div>
-                </section>
-                <hr className="separator"/>
+                <Colors />
                 <Actions />
               </div>
             </div>

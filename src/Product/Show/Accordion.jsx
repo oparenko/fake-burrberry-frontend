@@ -13,9 +13,9 @@ const Wrapper = styled.section`
 `;
 
 const Button = styled.button`
-  padding-top: 0;
+  padding-top: 2rem;
   padding-right: .5rem;
-  padding-bottom: 0;
+  padding-bottom: 2rem;
   padding-left: .5rem;
   width: 100%;
   border: none;
@@ -49,7 +49,7 @@ const Title = styled.h2`
     height: 10px;
     width: 10px;
     content: "";
-    background: url({triangle}) no-repeat;
+    background: url(${triangle}) no-repeat;
     transform: rotate( ${props => (props.isOpened ? '180deg' : '0deg')} );
 
     @media screen and (min-width: 48rem) {
@@ -59,7 +59,7 @@ const Title = styled.h2`
 `;
 
 const Content = styled.div`
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-family: "Lora", serif;
   font-size: .875rem;
   line-height: 1.5rem;
@@ -68,6 +68,7 @@ const Content = styled.div`
 
   @media screen and (min-width: 48rem) {
     margin-top: 1rem;
+    margin-bottom: 0;
   }
 
   p, ul {

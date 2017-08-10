@@ -37,16 +37,17 @@ const Title = styled.h2`
 `;
 
 const Content = styled.div`
+  display: block;
 
-  h3 {
+  h5 {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: .25rem;
     margin-left: 0;
     padding: 0;
     font-size: .75rem;
-    font-weight: bold;
-    line-height: 0.875rem;
+    font-weight: 700;
+    line-height: .875rem;
   }
 
   p {
@@ -73,15 +74,18 @@ export default () => (
         />
       </div>
       <div className="col-md-5">
+
         <Title>Shipping & Returns</Title>
-        <h5>Free Next Day Delivery</h5>
-        <p>Order before 7pm Monday to Thursday for delivery the next day</p>
-        <h5>Collect-in-Store</h5>
-        <p>Order online today and pick up your items in store as early as tomorrow</p>
-        <h5>Free Returns</h5>
-        <p>Enjoy free returns on your order</p>
-        <h5>Free Gift Packaging</h5>
-        <p>Discover our gift packaging, a gold lined box tied with a coloured ribbon</p>
+        <Content>
+          <h5>Free Next Day Delivery</h5>
+          <p>Order before 7pm Monday to Thursday for delivery the next day</p>
+          <h5>Collect-in-Store</h5>
+          <p>Order online today and pick up your items in store as early as tomorrow</p>
+          <h5>Free Returns</h5>
+          <p>Enjoy free returns on your order</p>
+          <h5>Free Gift Packaging</h5>
+          <p>Discover our gift packaging, a gold lined box tied with a coloured ribbon</p>
+        </Content>
       </div>
     </div>
   </Wrapper>

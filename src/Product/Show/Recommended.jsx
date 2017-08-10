@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Recommended = styled.section`
+  margin-top: 3rem;
   margin-right: .5rem;
   margin-left: .5rem;
 
   @media screen and (min-width: 48rem) {
+    margin-top: 1.5rem;
     margin-right: 0;
     margin-bottom: 2rem;
     margin-left: 0;

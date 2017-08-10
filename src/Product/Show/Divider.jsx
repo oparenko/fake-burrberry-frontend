@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Divider = styled.hr`
-  margin-top: 2rem;
+  margin-top: 0;
   margin-right: -50vw;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   margin-left: -50vw;
   position: relative;
   left: 50%;

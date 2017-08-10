@@ -3,10 +3,12 @@ import styled, { css } from 'styled-components';
 
 const Actions = styled.section`
   margin-right: .5rem;
+  margin-bottom: 3rem;
   margin-left: .5rem;
 
   @media screen and (min-width: 48rem) {
     margin-right: 0;
+    margin-bottom: 0;
     margin-left: 0;
   }
 `;

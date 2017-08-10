@@ -5,6 +5,7 @@ import Slider from './Slider.jsx';
 import Metadata from './Metadata.jsx';
 import Colors from './Colors.jsx'
 import Actions from './Actions.jsx';
+import Recommended from './Recommended.jsx'
 import './Main.css';
 
 class Main extends Component {
@@ -67,41 +68,7 @@ class Main extends Component {
                 </div>
               </div>
             </section>
-            <section className="recommended">
-              <h2 className="recommended__title">We recommend</h2>
-              <div className="recommended__products">
-                <div className="row">
-                  <div className="col-xs-6 col-md-3">
-                    <a className="recommended__product-card recommended__link" href="#">
-                      <img className="recommended__product-image" src="img/Embroided-Hooded.jpg" alt="Embroided Hooded"/>
-                      <h3 className="recommended__product-title">Emroided Hooded Content For Three Lines</h3>
-                      <h5 className="recommended__product-price">27 000 руб</h5>
-                    </a>
-                  </div>
-                  <div className="col-xs-6 col-md-3">
-                    <a className="recommended__product-card recommended__link" href="#">
-                      <img className="recommended__product-image" src="img/Relaxed-Fit-Stretch-Jeans.jpg" alt="Relaxed Fit Stretch Jeans"/>
-                      <h3 className="recommended__product-title">Relaxed Fit Stretch Jeans Content For Three Lines</h3>
-                      <h5 className="recommended__product-price">22 500 руб</h5>
-                    </a>
-                  </div>
-                  <div className="col-xs-6 col-md-3">
-                    <a className="recommended__product-card recommended__link" href="#">
-                      <img className="recommended__product-image" src="img/Leather-and-House-Check.jpg" alt="Leather and House Check"/>
-                      <h3 className="recommended__product-title">Leather and House Check Content For Three Lines</h3>
-                      <h5 className="recommended__product-price">120 000 руб</h5>
-                    </a>
-                  </div>
-                  <div className="col-xs-6 col-md-3">
-                    <a className="recommended__product-card recommended__link" href="#">
-                      <img className="recommended__product-image" src="img/Leather-Wingtip-Check.jpg" alt="Leather Wingtip Check"/>
-                      <h3 className="recommended__product-title">Leather Wingtip Check Content For Three Lines</h3>
-                      <h5 className="recommended__product-price">46 000 руб</h5>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <Recommended />
             <section className="more">
               <h2 className="more__title">More for you</h2>
               <a className="more__link" href="#">Men’s Black Trench Coats</a>

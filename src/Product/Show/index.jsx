@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import Title from './Title.jsx';
 import Slider from './Slider.jsx';
+import Metadata from './Metadata.jsx';
 import Actions from './Actions.jsx';
 import './Main.css';
 
@@ -18,10 +19,7 @@ class Main extends Component {
             <div className="row">
               <Slider />
               <div className="col-xs-12 col-md-5">
-                <section className="metadata">
-                  <h2 className="metadata__price">110 000 руб.</h2>
-                  <p className="metadata__id">Item 39428531</p>
-                </section>
+                <Metadata />
                 <section className="colour-picker">
                   <p className="colour-picker__description">Colour: Honey</p>
                   <div className="colour-picker__button-wrapper">

@@ -6,6 +6,7 @@ import Metadata from './Metadata.jsx';
 import Colors from './Colors.jsx'
 import Actions from './Actions.jsx';
 import Recommended from './Recommended.jsx'
+import More from './More.jsx'
 import './Main.css';
 
 class Main extends Component {
@@ -69,12 +70,7 @@ class Main extends Component {
               </div>
             </section>
             <Recommended />
-            <section className="more">
-              <h2 className="more__title">More for you</h2>
-              <a className="more__link" href="#">Men’s Black Trench Coats</a>
-              <a className="more__link" href="#">Men’s Short Trench Coats</a>
-              <a className="more__link" href="#">Men’s Long Trench Coats</a>
-            </section>
+            <More />
           </div>
         </main>
       </div>

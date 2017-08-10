@@ -59,14 +59,14 @@ const ProductName = styled.h3`
   line-height: 1.1875rem;
 `;
 
- const Price = styled.h5`
-   margin: 0;
-   color: #999;
-   font-family: "Raleway", Helvetica, Arial, sans-serif;
-   font-size: .75rem;
-   font-weight: 400;
-   line-height: .875rem;
- `;
+const Price = styled.h5`
+  margin: 0;
+  color: #999;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: .875rem;
+`;
 
 export default () => (
   <Recommended>

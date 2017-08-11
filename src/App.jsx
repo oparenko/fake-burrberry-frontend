@@ -5,17 +5,11 @@ import Header from "./Header";
 import Product from "./Product/Show/";
 import Footer from "./Footer";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Helmet defaultTitle="Burrberry" titleTemplate="%s Burrberry"/>
-        <Header />
-        <Product />
-        <Footer />
-      </div>
-    );
-  }
-}
-
-export default App;
+export default () => (
+  <div>
+    <Helmet defaultTitle="Burrberry" titleTemplate="%s Burrberry"/>
+    <Header />
+    <Product />
+    <Footer />
+  </div>
+);

@@ -38,22 +38,22 @@ export default () => (
     <Slider>
       <Photo
         src="img/Long-Cotton-Gabardine-Car-Coat-1.jpg"
-        srcset="img/Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x"
+        srcSet="img/Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x"
         alt="Long Cotton Gabardine Car Coat"
       />
       <Photo
         src="img/Long-Cotton-Gabardine-Car-Coat-2.jpg"
-        srcset="img/Long-Cotton-Gabardine-Car-Coat-2@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-2@3x.jpg 3x"
+        srcSet="img/Long-Cotton-Gabardine-Car-Coat-2@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-2@3x.jpg 3x"
         alt="Long Cotton Gabardine Car Coat"
       />
       <Photo
         src="img/Long-Cotton-Gabardine-Car-Coat-3.jpg"
-        srcset="img/Long-Cotton-Gabardine-Car-Coat-3@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-3@3x.jpg 3x"
+        srcSet="img/Long-Cotton-Gabardine-Car-Coat-3@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-3@3x.jpg 3x"
         alt="Long Cotton Gabardine Car Coat"
       />
       <Photo
         src="img/Long-Cotton-Gabardine-Car-Coat-4.jpg"
-        srcset="img/Long-Cotton-Gabardine-Car-Coat-4@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-4@3x.jpg 3x"
+        srcSet="img/Long-Cotton-Gabardine-Car-Coat-4@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-4@3x.jpg 3x"
         alt="Long Cotton Gabardine Car Coat"
       />
     </Slider>

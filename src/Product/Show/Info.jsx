@@ -40,7 +40,7 @@ const Id = styled.p`
 `;
 
 export default () => (
-  <div className="col-xs-12 col-md-5">
+  <div>
     <Metadata>
       <Price>110 000 руб.</Price>
       <Id>Item 39428531</Id>

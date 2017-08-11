@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import Title from './Title';
 import Slider from './Slider';
-import Metadata from './Metadata';
+import Info from './Info';
 import Accordion from './Accordion';
 import Shipping from './Shipping';
 import Recommended from './Recommended'
@@ -16,7 +16,9 @@ export default () => (
     <Title />
     <div className="row">
       <Slider />
-      <Metadata />
+      <div className="col-xs-12 col-md-5">
+        <Info />
+      </div>
     </div>
     <Accordion isOpened displayedMd name="description">
       <p>A refined car coat crafted in protective cotton gabardine.</p>

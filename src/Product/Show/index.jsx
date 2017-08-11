@@ -15,7 +15,9 @@ export default () => (
     </Helmet>
     <Title />
     <div className="row">
-      <Slider />
+      <div className="col-xs-12 col-md-7">
+        <Slider />
+      </div>
       <div className="col-xs-12 col-md-5">
         <Info />
       </div>

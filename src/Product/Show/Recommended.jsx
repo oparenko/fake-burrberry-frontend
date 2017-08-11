@@ -51,7 +51,7 @@ const Image = styled.img`
   vertical-align: middle;
 `;
 
-const ProductName = styled.h3`
+const Name = styled.h3`
   margin-top: .5rem;
   margin-bottom: .5rem;
   color: #111;
@@ -78,28 +78,28 @@ export default () => (
         <div className="col-xs-6 col-md-3">
           <Card href="#">
             <Image src="img/Embroided-Hooded.jpg" alt="Embroided Hooded" />
-            <ProductName>Emroided Hooded Content For Three Lines</ProductName>
+            <Name>Emroided Hooded Content For Three Lines</Name>
             <Price>27 000 руб</Price>
           </Card>
         </div>
         <div className="col-xs-6 col-md-3">
           <Card href="#">
             <Image src="img/Relaxed-Fit-Stretch-Jeans.jpg" alt="Relaxed Fit Stretch Jeans" />
-            <ProductName>Relaxed Fit Stretch Jeans Content For Three Lines</ProductName>
+            <Name>Relaxed Fit Stretch Jeans Content For Three Lines</Name>
             <Price>22 500 руб</Price>
           </Card>
         </div>
         <div className="col-xs-6 col-md-3">
           <Card href="#">
             <Image src="img/Leather-and-House-Check.jpg" alt="Leather and House Check" />
-            <ProductName>Leather and House Check Content For Three Lines</ProductName>
+            <Name>Leather and House Check Content For Three Lines</Name>
             <Price>120 000 руб</Price>
           </Card>
         </div>
         <div className="col-xs-6 col-md-3">
           <Card href="#">
             <Image src="img/Leather-Wingtip-Check.jpg" alt="Leather Wingtip Check" />
-            <ProductName>Leather Wingtip Check Content For Three Lines</ProductName>
+            <Name>Leather Wingtip Check Content For Three Lines</Name>
             <Price>46 000 руб</Price>
           </Card>
         </div>

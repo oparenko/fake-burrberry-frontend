@@ -34,7 +34,6 @@ const Photo = styled.img`
 `;
 
 export default () => (
-  <div className="col-xs-12 col-md-7">
     <Slider>
       <Photo
         src="img/Long-Cotton-Gabardine-Car-Coat-1.jpg"
@@ -57,5 +56,4 @@ export default () => (
         alt="Long Cotton Gabardine Car Coat"
       />
     </Slider>
-  </div>
 );

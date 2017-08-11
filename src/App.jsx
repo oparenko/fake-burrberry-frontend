@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Helmet } from 'react-helmet';
 
-import Header from "./Header.jsx";
-import Main from "./Product/Show/index.jsx";
-import Footer from "./Footer.jsx";
+import Header from "./Header";
+import Product from "./Product/Show/";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
       <div>
         <Helmet defaultTitle="Burrberry" titleTemplate="%s Burrberry"/>
         <Header />
-        <Main />
+        <Product />
         <Footer />
       </div>
     );

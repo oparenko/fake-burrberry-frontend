@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Divider from './Divider.jsx';
+import Divider from './Divider';
 import triangle from './triangle.svg';
 
 const Wrapper = styled.section`

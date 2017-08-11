@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import Title from './Title.jsx';
-import Slider from './Slider.jsx';
-import Metadata from './Metadata.jsx';
-import Accordion from './Accordion.jsx';
-import Shipping from './Shipping.jsx';
-import Recommended from './Recommended.jsx'
-import More from './More.jsx'
+import Title from './Title';
+import Slider from './Slider';
+import Metadata from './Metadata';
+import Accordion from './Accordion';
+import Shipping from './Shipping';
+import Recommended from './Recommended'
+import More from './More'
 
 export default () => (
   <div className="container">

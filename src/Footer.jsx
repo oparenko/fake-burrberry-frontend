@@ -27,7 +27,7 @@ const Navigation = styled.div`
   }
 `;
 
-const NavigationTitle = styled.h3`
+const Title = styled.h3`
   margin-top: 0;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -37,7 +37,7 @@ const NavigationTitle = styled.h3`
   line-height: 0.875rem;
 `;
 
-const NavigationLink = styled.a`
+const Link = styled.a`
   display: block;
   padding-bottom: 0.75rem;
   text-decoration: none;
@@ -112,36 +112,36 @@ export default () => (
       <Navigation>
         <div className="row">
           <div className="col-md-3">
-            <NavigationTitle>Customer Service</NavigationTitle>
+            <Title>Customer Service</Title>
             <nav>
-              <NavigationLink href="#">Contact Us</NavigationLink>
-              <NavigationLink href="#">Payment</NavigationLink>
-              <NavigationLink href="#">Shipping</NavigationLink>
-              <NavigationLink href="#">Returns</NavigationLink>
-              <NavigationLink href="#">Faqs</NavigationLink>
-              <NavigationLink href="#">Live Chat</NavigationLink>
-              <NavigationLink href="#">The Burberry App</NavigationLink>
-              <NavigationLink href="#">Store Locator</NavigationLink>
+              <Link href="#">Contact Us</Link>
+              <Link href="#">Payment</Link>
+              <Link href="#">Shipping</Link>
+              <Link href="#">Returns</Link>
+              <Link href="#">Faqs</Link>
+              <Link href="#">Live Chat</Link>
+              <Link href="#">The Burberry App</Link>
+              <Link href="#">Store Locator</Link>
             </nav>
           </div>
           <div className="col-md-3">
-            <NavigationTitle>Our Company</NavigationTitle>
+            <Title>Our Company</Title>
             <nav>
-              <NavigationLink href="#">Our History</NavigationLink>
-              <NavigationLink href="#">Burberry Group Plc</NavigationLink>
-              <NavigationLink href="#">Careers</NavigationLink>
-              <NavigationLink href="#">Corporate Responsibility</NavigationLink>
-              <NavigationLink href="#">Site Map</NavigationLink>
+              <Link href="#">Our History</Link>
+              <Link href="#">Burberry Group Plc</Link>
+              <Link href="#">Careers</Link>
+              <Link href="#">Corporate Responsibility</Link>
+              <Link href="#">Site Map</Link>
             </nav>
           </div>
           <div className="col-md-3">
-            <NavigationTitle>Legal &amp; Cookies</NavigationTitle>
+            <Title>Legal &amp; Cookies</Title>
             <nav>
-              <NavigationLink href="#">Terms &amp; Conditions</NavigationLink>
-              <NavigationLink href="#">Privacy Policy</NavigationLink>
-              <NavigationLink href="#">Cookie Policy</NavigationLink>
-              <NavigationLink href="#">Accessibility Statement</NavigationLink>
-              <NavigationLink href="#">Japan Only - SCTL indications</NavigationLink>
+              <Link href="#">Terms &amp; Conditions</Link>
+              <Link href="#">Privacy Policy</Link>
+              <Link href="#">Cookie Policy</Link>
+              <Link href="#">Accessibility Statement</Link>
+              <Link href="#">Japan Only - SCTL indications</Link>
             </nav>
           </div>
         </div>

@@ -19,6 +19,4 @@ const Divider = styled.hr`
   }
 `;
 
-export default () => (
-  <Divider />
-);
+export default Divider;

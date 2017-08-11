@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Colors from './Colors.jsx';
-import Actions from './Actions.jsx';
-import Divider from './Divider.jsx';
+import Colors from './Colors';
+import Actions from './Actions';
+import Divider from './Divider';
 
 const Metadata = styled.section`
   display: flex;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Card from './RecommendedCard';
 
 const Recommended = styled.section`
   margin-top: 3rem;
@@ -39,69 +40,38 @@ const Cards = styled.div`
   width: 100%;
 `;
 
-const Card = styled.a`
-  display: block;
-  padding-bottom: 2rem;
-  text-decoration: none;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
-`;
-
-const Name = styled.h3`
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  color: #111;
-  font-family: "Lora", "Times New Roman", serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.1875rem;
-`;
-
-const Price = styled.h5`
-  margin: 0;
-  color: #999;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  font-weight: 400;
-  line-height: .875rem;
-`;
-
 export default () => (
   <Recommended>
     <Title>We recommend</Title>
     <Cards>
       <div className="row">
         <div className="col-xs-6 col-md-3">
-          <Card href="#">
-            <Image src="img/Embroided-Hooded.jpg" alt="Embroided Hooded" />
-            <Name>Emroided Hooded Content For Three Lines</Name>
-            <Price>27 000 руб</Price>
-          </Card>
+          <Card
+            name="Emroided Hooded Content For Three Lines"
+            photo="Embroided-Hooded"
+            price={27000}
+          />
         </div>
         <div className="col-xs-6 col-md-3">
-          <Card href="#">
-            <Image src="img/Relaxed-Fit-Stretch-Jeans.jpg" alt="Relaxed Fit Stretch Jeans" />
-            <Name>Relaxed Fit Stretch Jeans Content For Three Lines</Name>
-            <Price>22 500 руб</Price>
-          </Card>
+          <Card
+            name="Relaxed Fit Stretch Jeans Content For Three Lines"
+            photo="Relaxed-Fit-Stretch-Jeans"
+            price={22500}
+          />
         </div>
         <div className="col-xs-6 col-md-3">
-          <Card href="#">
-            <Image src="img/Leather-and-House-Check.jpg" alt="Leather and House Check" />
-            <Name>Leather and House Check Content For Three Lines</Name>
-            <Price>120 000 руб</Price>
-          </Card>
+          <Card
+            name="Leather and House Check Content For Three Lines"
+            photo="Leather-and-House-Check"
+            price={12000}
+          />
         </div>
         <div className="col-xs-6 col-md-3">
-          <Card href="#">
-            <Image src="img/Leather-Wingtip-Check.jpg" alt="Leather Wingtip Check" />
-            <Name>Leather Wingtip Check Content For Three Lines</Name>
-            <Price>46 000 руб</Price>
-          </Card>
+          <Card
+            name="Leather Wingtip Check Content For Three Lines"
+            photo="Leather-Wingtip-Check"
+            price={46000}
+          />
         </div>
       </div>
     </Cards>

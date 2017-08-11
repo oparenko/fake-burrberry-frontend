@@ -14,6 +14,12 @@ const Header = styled.header`
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+
+  @media screen and (min-width: 62rem) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0;
+  }
 `;
 
 const Link = styled.a`line-height: 0;`;

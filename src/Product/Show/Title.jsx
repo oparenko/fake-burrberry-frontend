@@ -19,6 +19,10 @@ const Title = styled.h1`
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
+
+  @media screen and (min-width: 62rem) {
+    display: none;
+  }
 `;
 
 export default () => (

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IntlProvider, FormattedNumber } from 'react-intl';
+
 import Colors from './Colors';
 import Actions from './Actions';
 import Divider from './Divider';
@@ -42,7 +44,15 @@ const Id = styled.p`
 export default () => (
   <div>
     <Metadata>
-      <Price>110 000 руб.</Price>
+      <Price>
+        <FormattedNumber
+          value={110000}
+          style="currency"
+          currency="RUB"
+          currencyDisplay="symbol"
+          minimumFractionDigits={0}
+        />
+      </Price>
       <Id>Item 39428531</Id>
     </Metadata>
     <Colors />

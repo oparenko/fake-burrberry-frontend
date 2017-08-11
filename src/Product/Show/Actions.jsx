@@ -42,6 +42,7 @@ const Button = styled.button`
 	`}
 
   ${props => props.tertiary && css`
+    display: inline-block;
     padding: 0;
     text-align: left;
     border: none;

@@ -24,10 +24,16 @@ const Header = styled.header`
 
 const Link = styled.a`line-height: 0;`;
 
+const Img = styled.img`
+  @media screen and (min-width: 62rem) {
+    height: 1rem;
+  }
+`;
+
 export default () => (
   <Header>
     <Link href="/">
-      <img src={logo} alt="Burrberry Logo" />
+      <Img src={logo} alt="Burrberry Logo" />
     </Link>
   </Header>
 );

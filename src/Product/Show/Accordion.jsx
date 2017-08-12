@@ -10,6 +10,10 @@ const Wrapper = styled.section`
     display: ${props => (props.displayedMd ? 'block' : 'none')};
     padding-top: 1.5rem;
   }
+
+  @media screen and (min-width: 62rem) {
+    padding-top: 0;
+  }
 `;
 
 const Button = styled.button`

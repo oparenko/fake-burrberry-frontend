@@ -2,15 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Slider = styled.section`
-  position: relative;
-  right: 50%;
-  left: 50%;
-  display: flex;
-  overflow-y: scroll;
-  width: 100vw;
-  height: auto;
-  margin-right: -50vw;
   margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  display: block;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  white-space: nowrap;
+  overflow-x: scroll;
+  font-size: 0px;
 
   @media screen and (min-width: 48rem) {
     position: inherit;
@@ -31,6 +32,7 @@ const Photo = styled.img`
     width: auto;
     height: 576px;
   }
+
 `;
 
 export default () => (

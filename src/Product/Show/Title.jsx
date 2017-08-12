@@ -21,7 +21,8 @@ const Title = styled.h1`
   }
 
   @media screen and (min-width: 62rem) {
-    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 `;
 

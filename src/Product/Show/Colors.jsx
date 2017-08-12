@@ -9,7 +9,12 @@ const Colors = styled.section`
   @media screen and (min-width: 48rem) {
     margin-right: 0;
     margin-left: 0;
-}
+  }
+
+  @media screen and (min-width: 62rem) {
+    display: inline-block;
+    margin-top: 0;
+  }
 `;
 
 const Description = styled.p`
@@ -46,6 +51,10 @@ const Divider = styled.hr`
   height: 1px;
   background: #c6c6c6;
   border: 0;
+
+  @media screen and (min-width: 62rem) {
+    display: none;
+  }
 `;
 
 export default () => (

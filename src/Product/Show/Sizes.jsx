@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Actions from './Actions';
 
 const Section = styled.div`
   display: none;
@@ -69,7 +68,7 @@ const RadioButton = styled.button`
   box-shadow: inset 0px 0px 0px 1px #171717;
 `;
 
-const HelpButton = styled.button`
+const Help = styled.button`
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -88,7 +87,7 @@ export default () => (
   <Section>
     <Header>
       <SelectedSize>Size: <Selection>XL</Selection></SelectedSize>
-      <Button tertiary>Need size help?</Button>
+      <Help>Need size help?</Help>
     </Header>
     <Options>
       <RadioButton>S</RadioButton>

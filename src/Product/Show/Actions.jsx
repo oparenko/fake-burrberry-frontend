@@ -20,6 +20,11 @@ const Button = styled.button`
   font-size: .75rem;
   line-height: 0.875rem;
 
+  @media screen and (min-width: 62rem) {
+    display: inline-block;
+    max-width: 232px;
+  }
+
   ${props => props.primary && css`
     width: 100%;
     margin-bottom: 1rem;
@@ -29,6 +34,11 @@ const Button = styled.button`
     border: solid 1px #171717;
     border-radius: .125rem;
     background-color: #171717;
+
+    @media screen and (min-width: 62rem) {
+      margin-right: .5rem;
+      margin-bottom: 0;
+    }
 	`}
 
   ${props => props.secondary && css`
@@ -39,15 +49,23 @@ const Button = styled.button`
     border: solid 1px #999;
     border-radius: .125rem;
     background-color: transparent;
+
+    @media screen and (min-width: 62rem) {
+      margin-bottom: 0;
+      margin-left: .5rem;
+    }
 	`}
 
   ${props => props.tertiary && css`
-    display: inline-block;
     padding: 0;
     text-align: left;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     line-height: 1rem;
+
+    @media screen and (min-width: 62rem) {
+    display: none;
+  }
 	`}
 `;
 

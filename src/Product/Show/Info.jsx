@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { IntlProvider, FormattedNumber } from 'react-intl';
 
+import Title from './Title';
 import Colors from './Colors';
+import Sizes from './Sizes';
 import Actions from './Actions';
 import Divider from './Divider';
 
@@ -29,15 +31,53 @@ const Price = styled.h2`
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.1875rem;
+
+  @media screen and (min-width: 62rem) {
+    margin-top: .5rem;
+    font-weight: 500;
+  }
 `;
 
 const Id = styled.p`
   margin: 0;
-
   color: #171717;
-
   font-size: .75rem;
   font-weight: normal;
+  line-height: 1rem;
+
+  @media screen and (min-width: 62rem) {
+    display: none;
+  }
+`;
+
+const Appearance = styled.div`
+  @media screen and (min-width: 62rem) {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+  }
+`;
+
+const FreeDelivery = styled.div`
+  display: none;
+
+  @media screen and (min-width: 62rem) {
+    display: block;
+    margin-top: 1.5rem;
+  }
+`;
+
+const Subtitle = styled.h3`
+  margin: 0 0 .25rem 0;
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: .75rem;
+  line-height: .875rem;
+`;
+
+const Content = styled.p`
+  margin: 0;
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: .75rem;
   line-height: 1rem;
 `;
 
@@ -55,8 +95,15 @@ export default () => (
       </Price>
       <Id>Item 39428531</Id>
     </Metadata>
-    <Colors />
+    <Appearance>
+      <Colors />
+      <Sizes />
+    </Appearance>
     <Actions />
+    <FreeDelivery>
+      <Subtitle>Free Next Day Delivery</Subtitle>
+      <Content>Order before 7pm Monday to Thursday for delivery the next day</Content>
+    </FreeDelivery>
     <Divider />
   </div>
 );

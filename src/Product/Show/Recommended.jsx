@@ -13,23 +13,29 @@ const Recommended = styled.section`
     margin-bottom: 2rem;
     margin-left: 0;
   }
+
+  @media screen and (min-width: 48rem) {
+    margin-top: 4rem;
+  }
 `;
 
 const Title = styled.h2`
   display: inline-block;
+  width: 100%;
   margin-top: 0;
-  margin-bottom: 1.5rem;
-  padding-bottom: 8px;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
   vertical-align: baseline;
   text-transform: uppercase;
-  border-bottom: 1px solid #171717;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.19;
 
-  @media screen and (min-width: 48rem) {
-    margin-bottom: 1rem;
+  @media screen and (min-width: 62rem) {
+    text-align: center;
+    margin-bottom: 2rem;
   }
 `;
 

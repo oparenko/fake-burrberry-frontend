@@ -10,6 +10,7 @@ const Wrapper = styled.section`
 
   @media screen and (min-width: 48rem) {
     display: block;
+    margin-top: 3rem;
   }
 `;
 
@@ -56,11 +57,15 @@ const Paragraph = styled.p`
   font-size: .75rem;
   line-height: 1rem;
   color: #171717;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 export default () => (
   <Wrapper>
-    <div className="row">
+    <div className="row middle-lg">
       <div className="col-md-7">
         <Image
           src="img/Shipping.jpg"
@@ -68,7 +73,7 @@ export default () => (
           alt="Shipping"
         />
       </div>
-      <div className="col-md-5">
+      <div className="col-md-5 col-lg-4 col-lg-offset-1">
         <Title>Shipping & Returns</Title>
         <Subtitle>Free Next Day Delivery</Subtitle>
         <Paragraph>Order before 7pm Monday to Thursday for delivery the next day</Paragraph>

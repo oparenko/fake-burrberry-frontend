@@ -25,7 +25,7 @@ const Navigation = styled.div`
   display: none;
   padding-bottom: 2rem;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 0.75rem;
+  font-size: .75rem;
 
   @media screen and (min-width: 48rem) {
     display: block;
@@ -37,9 +37,9 @@ const Title = styled.h3`
   margin-bottom: 1rem;
   text-transform: uppercase;
   color: #171717;
-  font-size: 0.75rem;
+  font-size: .75rem;
   font-weight: bold;
-  line-height: 0.875rem;
+  line-height: .875rem;
 `;
 
 const Link = styled.a`

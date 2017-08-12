@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
-import { MinDeviceWidthLarge, MaxDeviceWidthLarge } from './Breakpoints';
+import { MaxLarge, MinLarge } from '../../Common/Breakpoints';
 import Title from './Title';
 import Slider from './Slider';
 import Info from './Info';
@@ -69,26 +69,26 @@ export default () => (
     </Helmet>
     <Section>
       <div className="container">
-        <MaxDeviceWidthLarge>
+        <MaxLarge>
           <Title />
-        </MaxDeviceWidthLarge>
+        </MaxLarge>
         <div className="row middle-lg">
           <div className="col-xs-12 col-md-7 col-lg-6">
-            <MaxDeviceWidthLarge>
+            <MaxLarge>
               <Slider />
-            </MaxDeviceWidthLarge>
-            <MinDeviceWidthLarge>
+            </MaxLarge>
+            <MinLarge>
               <FeaturedImage
                 src="img/Long-Cotton-Gabardine-Car-Coat-1.jpg"
                 srcSet="img/Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x"
                 alt="Long Cotton Gabardine Car Coat"
               />
-            </MinDeviceWidthLarge>
+            </MinLarge>
           </div>
           <div className="col-xs-12 col-md-5 col-lg-6">
-            <MinDeviceWidthLarge>
+            <MinLarge>
               <Title />
-            </MinDeviceWidthLarge>
+            </MinLarge>
             <Info />
           </div>
         </div>

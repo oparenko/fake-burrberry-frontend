@@ -11,7 +11,7 @@ const Slider = styled.section`
   width: 100vw;
   white-space: nowrap;
   overflow-x: scroll;
-  font-size: 0px;
+  font-size: 0;
 
   @media screen and (min-width: 48rem) {
     position: inherit;

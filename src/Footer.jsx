@@ -44,7 +44,7 @@ const Title = styled.h3`
 
 const Link = styled.a`
   display: block;
-  padding-bottom: 0.75rem;
+  padding-bottom: .75rem;
   text-decoration: none;
   color: #999;
   font-weight: 600;

@@ -15,7 +15,7 @@ const Title = styled.h2`
   display: inline-block;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  padding-bottom: 8px;
+  padding-bottom: .5rem;
   text-transform: uppercase;
   border-bottom: 1px solid #171717;
   font-family: "Raleway", Helvetica, Arial, sans-serif;

@@ -18,11 +18,11 @@ const Button = styled.button`
   text-transform: uppercase;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: .75rem;
-  line-height: 0.875rem;
+  line-height: .875rem;
 
   @media screen and (min-width: 62rem) {
     display: inline-block;
-    max-width: 232px;
+    max-width: 14.5rem;
   }
 
   ${props => props.primary && css`

@@ -4,13 +4,17 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   margin-top: 1.5rem;
   display: none;
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   color: #171717;
 
   @media screen and (min-width: 48rem) {
     display: block;
     margin-top: 3rem;
+  }
+
+  @media screen and (min-width: 62rem) {
+    margin-top: 4rem;
   }
 `;
 
@@ -29,7 +33,7 @@ const Title = styled.h2`
   position: relative;
   display: inline-block;
   text-align: left;
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;

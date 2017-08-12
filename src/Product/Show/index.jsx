@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
 import { Desktop, DesktopLess } from './Breakpoints';
@@ -45,6 +45,7 @@ const DetailedShots = styled.div`
 
   @media screen and (min-width: 62rem) {
     display: block;
+    margin-top: 4rem;
   }
 `;
 
@@ -52,9 +53,13 @@ const Shot = styled.img`
   display: block;
   min-width: 100%;
 
-  &:nth-child(3n) {
-    margin-top: 4rem;
-  }
+  ${props => props.first && css`
+    margin-top: 6rem;
+  `}
+  
+  ${props => props.second && css`
+    margin-top: 10rem;
+  `}
 `;
 
 export default () => (
@@ -123,6 +128,7 @@ export default () => (
           <div className="row">
             <div className="col-lg-4">
               <Shot
+                first
                 src="img/Long-Cotton-Gabardine-Car-Coat-Detail-2.jpg"
                 srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-2@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-Detail-2@3x.jpg 3x"
                 alt="Long Cotton Gabardine Car Coat Detail"
@@ -130,6 +136,7 @@ export default () => (
             </div>
             <div className="col-lg-4">
               <Shot
+                second
                 src="img/Long-Cotton-Gabardine-Car-Coat-Detail-3.jpg"
                 srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-3@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-Detail-3@3x.jpg 3x"
                 alt="Long Cotton Gabardine Car Coat Detail"

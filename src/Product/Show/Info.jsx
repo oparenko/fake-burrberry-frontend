@@ -69,14 +69,14 @@ const FreeDelivery = styled.div`
 
 const Subtitle = styled.h3`
   margin: 0 0 .25rem 0;
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: .875rem;
 `;
 
 const Content = styled.p`
   margin: 0;
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: 1rem;
 `;

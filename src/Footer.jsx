@@ -14,6 +14,11 @@ const Footer = styled.footer`
     padding-right: 0;
     padding-left: 0;
   }
+
+  @media screen and (min-width: 48rem) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 `;
 
 const Navigation = styled.div`

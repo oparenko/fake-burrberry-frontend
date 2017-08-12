@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
-import { Desktop, DesktopLess } from './Breakpoints';
+import { MinDeviceWidthLarge, MaxDeviceWidthLarge } from './Breakpoints';
 import Title from './Title';
 import Slider from './Slider';
 import Info from './Info';
@@ -56,7 +56,7 @@ const Shot = styled.img`
   ${props => props.first && css`
     margin-top: 6rem;
   `}
-  
+
   ${props => props.second && css`
     margin-top: 10rem;
   `}
@@ -69,26 +69,26 @@ export default () => (
     </Helmet>
     <Section>
       <div className="container">
-        <DesktopLess>
+        <MaxDeviceWidthLarge>
           <Title />
-        </DesktopLess>
+        </MaxDeviceWidthLarge>
         <div className="row middle-lg">
           <div className="col-xs-12 col-md-7 col-lg-6">
-            <DesktopLess>
+            <MaxDeviceWidthLarge>
               <Slider />
-            </DesktopLess>
-            <Desktop>
+            </MaxDeviceWidthLarge>
+            <MinDeviceWidthLarge>
               <FeaturedImage
                 src="img/Long-Cotton-Gabardine-Car-Coat-1.jpg"
                 srcSet="img/Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x"
                 alt="Long Cotton Gabardine Car Coat"
               />
-            </Desktop>
+            </MinDeviceWidthLarge>
           </div>
           <div className="col-xs-12 col-md-5 col-lg-6">
-            <Desktop>
+            <MinDeviceWidthLarge>
               <Title />
-            </Desktop>
+            </MinDeviceWidthLarge>
             <Info />
           </div>
         </div>

@@ -58,7 +58,7 @@ const Appearance = styled.div`
   }
 `;
 
-const FreeDelivery = styled.div`
+const Delivery = styled.div`
   display: none;
 
   @media screen and (min-width: 62rem) {
@@ -100,10 +100,10 @@ export default () => (
       <Sizes />
     </Appearance>
     <Actions />
-    <FreeDelivery>
+    <Delivery>
       <Subtitle>Free Next Day Delivery</Subtitle>
       <Content>Order before 7pm Monday to Thursday for delivery the next day</Content>
-    </FreeDelivery>
+    </Delivery>
     <Divider />
   </div>
 );

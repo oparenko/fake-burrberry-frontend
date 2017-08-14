@@ -27,9 +27,7 @@ const Description = styled.p`
   line-height: 1rem;
 `;
 
-const Wrapper = styled.div`
-  display: flex;
-`;
+const Wrapper = styled.div`display: flex;`;
 
 const Button = styled.button`
   display: inline-block;
@@ -57,13 +55,16 @@ const Divider = styled.hr`
   }
 `;
 
-export default () => (
-  <Colors>
+export default () =>
+  (<Colors>
     <Description>Colour: Honey</Description>
     <Wrapper>
-      <Button color="black" name="black" type="button">Change colour to black</Button>
-      <Button active color="#cfa880" name="honey" type="button">Change colour to honey</Button>
+      <Button color="black" name="black" type="button">
+        Change colour to black
+      </Button>
+      <Button active color="#cfa880" name="honey" type="button">
+        Change colour to honey
+      </Button>
     </Wrapper>
     <Divider />
-  </Colors>
-);
+  </Colors>);

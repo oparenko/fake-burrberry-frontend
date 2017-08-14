@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
@@ -8,14 +8,10 @@ import Slider from './Slider';
 import Info from './Info';
 import Accordion from './Accordion';
 import Shipping from './Shipping';
-import Recommended from './Recommended'
-import More from './More'
+import Recommended from './Recommended';
+import More from './More';
 
-const Section = styled.section`
-  @media screen and (min-width: 62rem) {
-    background: #d4bdad;
-  }
-`;
+const Section = styled.section`@media screen and (min-width: 62rem) {background: #d4bdad;}`;
 
 const FeaturedImage = styled.img`
   display: block;
@@ -34,11 +30,7 @@ const DescriptionImage = styled.img`
   }
 `;
 
-const Details = styled.section`
-  @media screen and (min-width: 62rem) {
-    margin-top: 4rem;
-  }
-`;
+const Details = styled.section`@media screen and (min-width: 62rem) {margin-top: 4rem;}`;
 
 const DetailedShots = styled.div`
   display: none;
@@ -53,17 +45,19 @@ const Shot = styled.img`
   display: block;
   min-width: 100%;
 
-  ${props => props.first && css`
+  ${props =>
+    props.first &&
+    css`
     margin-top: 6rem;
-  `}
-
-  ${props => props.second && css`
+  `} ${props =>
+  props.second &&
+      css`
     margin-top: 10rem;
-  `}
+  `};
 `;
 
-export default () => (
-  <main>
+export default () =>
+  (<main>
     <Helmet>
       <title>Long Cotton Gabardine Car Coat | Men -</title>
     </Helmet>
@@ -80,7 +74,8 @@ export default () => (
             <MinLarge>
               <FeaturedImage
                 src="img/Long-Cotton-Gabardine-Car-Coat-1.jpg"
-                srcSet="img/Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x"
+                srcSet="img/Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x,
+                        img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x"
                 alt="Long Cotton Gabardine Car Coat"
               />
             </MinLarge>
@@ -100,11 +95,19 @@ export default () => (
           <div className="col-xs-12 col-lg-4">
             <Accordion isOpened displayedMd name="description">
               <p>A refined car coat crafted in protective cotton gabardine.</p>
-              <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric that protects against wind and rain.</p>
-              <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
+              <p>
+                Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and
+                breathable fabric that protects against wind and rain.
+              </p>
+              <p>
+                Raglan sleeves and a concealed button closure complement the clean tailored lines.
+              </p>
               <p>The piece is finished with a distinctive check undercollar.</p>
               <br />
-              <p>Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly according to size.</p>
+              <p>
+                Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change
+                slightly according to size.
+              </p>
               <ul>
                 <li>Outer: 100% cotton</li>
                 <li>Check lining: 100% cotton</li>
@@ -119,7 +122,8 @@ export default () => (
           <div className="col-lg-8">
             <DescriptionImage
               src="img/Long-Cotton-Gabardine-Car-Coat-Detail-1.jpg"
-              srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-1@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-Detail-1@3x.jpg 3x"
+              srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-1@2x.jpg 2x,
+                      img/Long-Cotton-Gabardine-Car-Coat-Detail-1@3x.jpg 3x"
               alt="Long Cotton Gabardine Car Coat Detail"
             />
           </div>
@@ -130,7 +134,8 @@ export default () => (
               <Shot
                 first
                 src="img/Long-Cotton-Gabardine-Car-Coat-Detail-2.jpg"
-                srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-2@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-Detail-2@3x.jpg 3x"
+                srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-2@2x.jpg 2x,
+                        img/Long-Cotton-Gabardine-Car-Coat-Detail-2@3x.jpg 3x"
                 alt="Long Cotton Gabardine Car Coat Detail"
               />
             </div>
@@ -138,14 +143,16 @@ export default () => (
               <Shot
                 second
                 src="img/Long-Cotton-Gabardine-Car-Coat-Detail-3.jpg"
-                srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-3@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-Detail-3@3x.jpg 3x"
+                srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-3@2x.jpg 2x,
+                        img/Long-Cotton-Gabardine-Car-Coat-Detail-3@3x.jpg 3x"
                 alt="Long Cotton Gabardine Car Coat Detail"
               />
             </div>
             <div className="col-lg-4">
               <Shot
                 src="img/Long-Cotton-Gabardine-Car-Coat-Detail-4.jpg"
-                srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-4@2x.jpg 2x, img/Long-Cotton-Gabardine-Car-Coat-Detail-4@3x.jpg 3x"
+                srcSet="img/Long-Cotton-Gabardine-Car-Coat-Detail-4@2x.jpg 2x,
+                        img/Long-Cotton-Gabardine-Car-Coat-Detail-4@3x.jpg 3x"
                 alt="Long Cotton Gabardine Car Coat Detail"
               />
             </div>
@@ -157,5 +164,4 @@ export default () => (
         <More />
       </div>
     </Details>
-  </main>
-);
+  </main>);

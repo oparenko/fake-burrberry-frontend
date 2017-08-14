@@ -67,8 +67,8 @@ const Paragraph = styled.p`
   }
 `;
 
-export default () => (
-  <Wrapper>
+export default () =>
+  (<Wrapper>
     <div className="row middle-lg">
       <div className="col-md-7">
         <Image
@@ -82,12 +82,15 @@ export default () => (
         <Subtitle>Free Next Day Delivery</Subtitle>
         <Paragraph>Order before 7pm Monday to Thursday for delivery the next day</Paragraph>
         <Subtitle>Collect-in-Store</Subtitle>
-        <Paragraph>Order online today and pick up your items in store as early as tomorrow</Paragraph>
+        <Paragraph>
+          Order online today and pick up your items in store as early as tomorrow
+        </Paragraph>
         <Subtitle>Free Returns</Subtitle>
         <Paragraph>Enjoy free returns on your order</Paragraph>
         <Subtitle>Free Gift Packaging</Subtitle>
-        <Paragraph>Discover our gift packaging, a gold lined box tied with a coloured ribbon</Paragraph>
+        <Paragraph>
+          Discover our gift packaging, a gold lined box tied with a coloured ribbon
+        </Paragraph>
       </div>
     </div>
-  </Wrapper>
-);
+  </Wrapper>);

@@ -39,7 +39,7 @@ const Button = styled.button`
       margin-right: .5rem;
       margin-bottom: 0;
     }
-	`}
+    `}
 
   ${props => props.secondary && css`
     width: 100%;
@@ -54,7 +54,7 @@ const Button = styled.button`
       margin-bottom: 0;
       margin-left: .5rem;
     }
-	`}
+`}
 
   ${props => props.tertiary && css`
     padding: 0;
@@ -66,7 +66,7 @@ const Button = styled.button`
     @media screen and (min-width: 62rem) {
     display: none;
   }
-	`}
+  `}
 `;
 
 export default () => (

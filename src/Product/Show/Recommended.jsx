@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IntlProvider, FormattedNumber } from 'react-intl';
+import { FormattedNumber } from 'react-intl';
 
 const Recommended = styled.section`
   margin-top: 3rem;
@@ -77,8 +77,8 @@ const Price = styled.h5`
   line-height: .875rem;
 `;
 
-export default () => (
-  <Recommended>
+export default () =>
+  (<Recommended>
     <Title>We recommend</Title>
     <Cards>
       <div className="row">
@@ -89,7 +89,7 @@ export default () => (
             <Price>
               <FormattedNumber
                 value={27000}
-                style="currency"
+                style="currency" // eslint-disable-line
                 currency="RUB"
                 currencyDisplay="symbol"
                 minimumFractionDigits={0}
@@ -104,7 +104,7 @@ export default () => (
             <Price>
               <FormattedNumber
                 value={22500}
-                style="currency"
+                style="currency" // eslint-disable-line
                 currency="RUB"
                 currencyDisplay="symbol"
                 minimumFractionDigits={0}
@@ -119,7 +119,7 @@ export default () => (
             <Price>
               <FormattedNumber
                 value={12000}
-                style="currency"
+                style="currency" // eslint-disable-line
                 currency="RUB"
                 currencyDisplay="symbol"
                 minimumFractionDigits={0}
@@ -134,7 +134,7 @@ export default () => (
             <Price>
               <FormattedNumber
                 value={46000}
-                style="currency"
+                style="currency" // eslint-disable-line
                 currency="RUB"
                 currencyDisplay="symbol"
                 minimumFractionDigits={0}
@@ -144,5 +144,4 @@ export default () => (
         </div>
       </div>
     </Cards>
-  </Recommended>
-);
+  </Recommended>);

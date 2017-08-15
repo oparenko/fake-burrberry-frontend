@@ -111,8 +111,8 @@ const NeedHelpLink = styled.a`
   line-height: 1.0625rem;
 `;
 
-export default () => (
-  <Footer>
+export default () =>
+  (<Footer>
     <div className="container">
       <Navigation>
         <div className="row">
@@ -160,5 +160,4 @@ export default () => (
         <NeedHelpLink href="#">Find out more and contact us</NeedHelpLink>
       </NeedHelp>
     </div>
-  </Footer>
-);
+  </Footer>);

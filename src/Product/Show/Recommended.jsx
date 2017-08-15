@@ -1,6 +1,8 @@
+/* eslint-disable react/style-prop-object */
+
 import React from 'react';
 import styled from 'styled-components';
-import { IntlProvider, FormattedNumber } from 'react-intl';
+import { FormattedNumber } from 'react-intl';
 
 const Recommended = styled.section`
   margin-top: 3rem;
@@ -77,8 +79,8 @@ const Price = styled.h5`
   line-height: .875rem;
 `;
 
-export default () => (
-  <Recommended>
+export default () =>
+  (<Recommended>
     <Title>We recommend</Title>
     <Cards>
       <div className="row">
@@ -144,5 +146,4 @@ export default () => (
         </div>
       </div>
     </Cards>
-  </Recommended>
-);
+  </Recommended>);

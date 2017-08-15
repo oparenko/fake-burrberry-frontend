@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IntlProvider, FormattedNumber } from 'react-intl';
+import { FormattedNumber } from 'react-intl';
 
-import Title from './Title';
 import Colors from './Colors';
 import Sizes from './Sizes';
 import Actions from './Actions';
@@ -81,13 +80,13 @@ const Content = styled.p`
   line-height: 1rem;
 `;
 
-export default () => (
-  <div>
+export default () =>
+  (<div>
     <Metadata>
       <Price>
         <FormattedNumber
           value={110000}
-          style="currency"
+          style="currency" // eslint-disable-line
           currency="RUB"
           currencyDisplay="symbol"
           minimumFractionDigits={0}
@@ -105,5 +104,4 @@ export default () => (
       <Content>Order before 7pm Monday to Thursday for delivery the next day</Content>
     </Delivery>
     <Divider />
-  </div>
-);
+  </div>);

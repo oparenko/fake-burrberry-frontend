@@ -83,10 +83,12 @@ const Help = styled.button`
   cursor: pointer;
 `;
 
-export default () => (
-  <Section>
+export default () =>
+  (<Section>
     <Header>
-      <SelectedSize>Size: <Selection>XL</Selection></SelectedSize>
+      <SelectedSize>
+        Size: <Selection>XL</Selection>
+      </SelectedSize>
       <Help>Need size help?</Help>
     </Header>
     <Options>
@@ -95,5 +97,4 @@ export default () => (
       <RadioButton>L</RadioButton>
       <RadioButton isSelected>XL</RadioButton>
     </Options>
-  </Section>
-);
+  </Section>);

@@ -54,7 +54,7 @@ const Title = styled.h2`
     width: 10px;
     content: "";
     background: url(${triangle}) no-repeat;
-    transform: rotate( ${props => (props.isOpened ? '180deg' : '0deg')} );
+    transform: rotate(${props => (props.isOpened ? '180deg' : '0deg')});
 
     @media screen and (min-width: 48rem) {
       display: none;
@@ -75,7 +75,8 @@ const Content = styled.div`
     margin-bottom: 0;
   }
 
-  p, ul {
+  p,
+  ul {
     margin: 0;
     padding-top: 0;
     padding-right: .5rem;
@@ -108,7 +109,9 @@ class Accordion extends Component {
     return (
       <Wrapper displayedMd={this.props.displayedMd}>
         <Button onClick={this.handleClick}>
-          <Title isOpened={this.state.isOpened}>{this.props.name}</Title>
+          <Title isOpened={this.state.isOpened}>
+            {this.props.name}
+          </Title>
         </Button>
         <Content isOpened={this.state.isOpened}>
           {this.props.children}

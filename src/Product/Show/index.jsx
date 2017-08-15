@@ -64,7 +64,7 @@ export default () =>
     <Section>
       <div className="container">
         <MaxLarge>
-          <Title />
+          <Title>Long Cotton Gabardine Car Coat</Title>
         </MaxLarge>
         <div className="row middle-lg">
           <div className="col-xs-12 col-md-7 col-lg-6">
@@ -82,7 +82,7 @@ export default () =>
           </div>
           <div className="col-xs-12 col-md-5 col-lg-6">
             <MinLarge>
-              <Title />
+              <Title>Long Cotton Gabardine Car Coat</Title>
             </MinLarge>
             <Info />
           </div>

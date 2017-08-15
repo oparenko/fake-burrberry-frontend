@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -26,4 +25,4 @@ const Title = styled.h1`
   }
 `;
 
-export default () => <Title>Long Cotton Gabardine Car Coat</Title>;
+export default Title;

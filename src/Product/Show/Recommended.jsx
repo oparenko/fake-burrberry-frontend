@@ -1,3 +1,5 @@
+/* eslint-disable react/style-prop-object */
+
 import React from 'react';
 import styled from 'styled-components';
 import { FormattedNumber } from 'react-intl';
@@ -89,7 +91,7 @@ export default () =>
             <Price>
               <FormattedNumber
                 value={27000}
-                style="currency" // eslint-disable-line
+                style="currency"
                 currency="RUB"
                 currencyDisplay="symbol"
                 minimumFractionDigits={0}
@@ -104,7 +106,7 @@ export default () =>
             <Price>
               <FormattedNumber
                 value={22500}
-                style="currency" // eslint-disable-line
+                style="currency"
                 currency="RUB"
                 currencyDisplay="symbol"
                 minimumFractionDigits={0}
@@ -119,7 +121,7 @@ export default () =>
             <Price>
               <FormattedNumber
                 value={12000}
-                style="currency" // eslint-disable-line
+                style="currency"
                 currency="RUB"
                 currencyDisplay="symbol"
                 minimumFractionDigits={0}
@@ -134,7 +136,7 @@ export default () =>
             <Price>
               <FormattedNumber
                 value={46000}
-                style="currency" // eslint-disable-line
+                style="currency"
                 currency="RUB"
                 currencyDisplay="symbol"
                 minimumFractionDigits={0}

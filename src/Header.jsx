@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from './logo.svg';
+import hamburger from './hamburger.svg';
 
 const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: solid 1px #c6c6c6;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
 
   @media screen and (min-width: 48rem) {
     padding-top: 1.5rem;
@@ -22,18 +22,32 @@ const Header = styled.header`
   }
 `;
 
-const Link = styled.a`line-height: 0;`;
+const Link = styled.a`
+  text-align: center;
+  line-height: 0;
+`;
 
-const Img = styled.img`
-  @media screen and (min-width: 62rem) {
+const Logo = styled.img`
+  height: .75rem;
+
+  @media screen and (min-width: 48rem) {
     height: 1rem;
   }
 `;
 
-export default () => (
-  <Header>
+const Menu = styled.img`
+  position: absolute;
+  left: .5rem;
+
+  @media screen and (min-width: 48rem) {
+    display: none;
+  }
+`;
+
+export default () =>
+  (<Header>
+    <Menu src={hamburger} alt="Menu icon" />
     <Link href="/">
-      <Img src={logo} alt="Burrberry Logo" />
+      <Logo src={logo} alt="Burrberry Logo" />
     </Link>
-  </Header>
-);
+  </Header>);

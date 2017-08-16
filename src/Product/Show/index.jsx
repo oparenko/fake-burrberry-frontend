@@ -59,7 +59,7 @@ const Shot = styled.img`
 export default () =>
   (<main>
     <Helmet>
-      <title>Long Cotton Gabardine Car Coat | Men -</title>
+      <title>Long Cotton Gabardine Car Coat | Men |</title>
     </Helmet>
     <Section>
       <div className="container">

@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   white-space: nowrap;
   align-items: center;
   padding-bottom: 1.5rem;
-  padding-left: .5rem;
+  margin-right: -.5rem;
 `;
 
 const Title = styled.h4`

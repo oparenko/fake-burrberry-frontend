@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Filters from './Filters';
 
 const Wrapper = styled.div`
+  margin-bottom: 2rem;
   background-color: #f3f3f3;
   box-sizing: border-box;
 `;
@@ -37,6 +38,6 @@ export default () =>
         Explore our menswear collection for the season. Sculptural knitwear, sweatshirts, artist
         overalls and oversized cabans feature alongside our signature trench coat in both heritage.
       </Description>
+      <Filters />
     </div>
-    <Filters />
   </Wrapper>);

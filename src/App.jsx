@@ -6,7 +6,7 @@ import { IntlProvider, addLocaleData } from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import ru from 'react-intl/locale-data/ru';
 
-import Header from './Header';
+import Header from './Header/';
 import Show from './Product/Show/';
 import List from './Product/List/';
 import Footer from './Footer';
@@ -14,8 +14,8 @@ import Footer from './Footer';
 addLocaleData([...en, ...ru]);
 
 export default () =>
-  (<IntlProvider locale={navigator.language}>
-    <Router>
+  (<Router>
+    <IntlProvider locale={navigator.language}>
       <div>
         <Helmet defaultTitle="Burrberry" titleTemplate="%s Burrberry" />
         <Header />
@@ -25,5 +25,5 @@ export default () =>
 
         <Footer />
       </div>
-    </Router>
-  </IntlProvider>);
+    </IntlProvider>
+  </Router>);

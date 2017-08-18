@@ -5,6 +5,11 @@ const Wrapper = styled.div`
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+
+  @media screen and (min-width: 48rem) {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
 `;
 
 const Showing = styled.h4`

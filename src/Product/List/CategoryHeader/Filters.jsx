@@ -12,6 +12,10 @@ const Wrapper = styled.div`
   align-items: center;
   overflow-x: scroll;
   display: flex;
+
+  @media screen and (min-width: 48rem) {
+    margin-right: 0;
+  }
 `;
 
 const Filters = styled.div`display: flex;`;
@@ -27,7 +31,7 @@ const Title = styled.h4`
   margin-left: 0;
 `;
 
-const Filter = styled.button`
+const Dropdown = styled.button`
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: 1rem;
@@ -37,8 +41,11 @@ const Filter = styled.button`
   position: relative;
   display: flex;
   padding: 0;
-  margin-right: 1rem;
   align-items: center;
+
+  & + & {
+    margin-right: 1rem;
+  }
 
   &:after {
     content: '';
@@ -49,13 +56,11 @@ const Filter = styled.button`
     height: 6px;
     margin-left: .5rem;
   }
-`;
-
-const SortBy = styled.div`
-  margin-left: 1rem;
 
   @media screen and (min-width: 48rem) {
-    margin-left: 0;
+    & + & {
+      margin-left: 3rem;
+    }
   }
 `;
 
@@ -65,11 +70,11 @@ export default () =>
       <MaxSmall>
         <Title>Refine by</Title>
       </MaxSmall>
-      <Filter>Category</Filter>
-      <Filter>Colour</Filter>
-      <Filter>Size</Filter>
+      <Dropdown>Category</Dropdown>
+      <Dropdown>Colour</Dropdown>
+      <Dropdown>Size</Dropdown>
     </Filters>
-    <SortBy>
-      <Filter>Sort by Price</Filter>
-    </SortBy>
+    <div>
+      <Dropdown>Sort by Price</Dropdown>
+    </div>
   </Wrapper>);

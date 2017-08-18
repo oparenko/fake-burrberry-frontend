@@ -13,6 +13,11 @@ const SectionTitle = styled.h2`
   font-weight: 400;
   line-height: 1.1875rem;
   color: #171717;
+
+  @media screen and (min-width: 48rem) {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+  }
 `;
 
 const Divider = styled.hr`
@@ -21,6 +26,10 @@ const Divider = styled.hr`
   height: 1px;
   background-color: #c6c6c6;
   border: none;
+
+  @media screen and (min-width: 48rem) {
+    margin-top: 2rem;
+  }
 `;
 
 const Heritage = [

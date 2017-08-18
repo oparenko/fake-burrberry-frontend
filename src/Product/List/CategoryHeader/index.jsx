@@ -36,7 +36,6 @@ const Description = styled.p`
   font-weight: 400;
   line-height: 1.25rem;
   color: #171717;
-  opacity: 0.87;
 
   @media screen and (min-width: 48rem) {
     padding-bottom: 2.5rem;

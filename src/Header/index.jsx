@@ -6,10 +6,7 @@ import logo from './logo.svg';
 import hamburger from './hamburger.svg';
 import arrow from './arrow.svg';
 
-const MainHeader = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const Header = styled.header`
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
 
@@ -25,12 +22,10 @@ const MainHeader = styled.div`
   }
 `;
 
-const Link = styled.a`
-  text-align: center;
-  line-height: 0;
-`;
-
 const Logo = styled.img`
+  display: block;
+  text-align: center;
+  margin: auto;
   height: .75rem;
 
   @media screen and (min-width: 48rem) {
@@ -38,14 +33,25 @@ const Logo = styled.img`
   }
 `;
 
-const Menu = styled.img`
+const Link = styled.a`
+  text-align: center;
+  line-height: 0;
+`;
+
+const Menu = styled.button`
   position: absolute;
-  left: .5rem;
+  text-indent: -9999px;
+  background: url(${hamburger});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1rem .625rem;
+  width: 1rem;
+  height: .75rem;
+  border: 0;
 `;
 
 const Location = styled.button`
   position: absolute;
-  left: .5rem;
   padding: 0;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -68,19 +74,21 @@ const Location = styled.button`
 `;
 
 export default () =>
-  (<header>
-    <MainHeader>
-      <MaxSmall>
-        <Menu src={hamburger} alt="Menu icon" />
-      </MaxSmall>
-      <MinMedium>
-        <Location type="button">Shopping in: United Kingdom (£)</Location>
-      </MinMedium>
-      <Link href="/">
-        <Logo src={logo} alt="Burrberry Logo" />
-      </Link>
-    </MainHeader>
+  (<div>
+    <Header>
+      <div className="container">
+        <MaxSmall>
+          <Menu type="button">Menu</Menu>
+        </MaxSmall>
+        <MinMedium>
+          <Location type="button">Shopping in: United Kingdom (£)</Location>
+        </MinMedium>
+        <Link href="#">
+          <Logo src={logo} alt="Burrberry Logo" />
+        </Link>
+      </div>
+    </Header>
     <MinMedium>
       <MenuFull />
     </MinMedium>
-  </header>);
+  </div>);

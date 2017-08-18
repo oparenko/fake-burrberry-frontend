@@ -1,14 +1,28 @@
 /* eslint-disable react/style-prop-object */
 
 import React from 'react';
-import styled from 'styled-components';
-import { FormattedNumber } from 'react-intl';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
+import { FormattedNumber, FormattedPlural } from 'react-intl';
+import { Link } from 'react-router-dom';
 import like from './like.svg';
 
-const Card = styled.a`
+const CardStyled = styled.div`
   display: block;
   margin-bottom: 2rem;
   text-decoration: none;
+`;
+
+const LinkStyled = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  color: #171717;
+
+  ${props =>
+    props.underline &&
+    css`
+    border-bottom: 1px solid #171717;
+    `}
 `;
 
 const Metadata = styled.div`
@@ -74,22 +88,35 @@ const Like = styled.button`
   border: 0;
 `;
 
-export default () =>
-  (<Card href="{item.href}">
-    <Image
-      src="https://assets.burberry.com/is/image/Burberryltd/995466e7e1113f3b2f6484ceb090072e1c9062dc.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742"
-      alt=""
-    />
+const Card = props =>
+  (<CardStyled>
+    <LinkStyled to={props.link}>
+      <Image src={props.photoUrl} alt={props.name} />
+    </LinkStyled>
     <Metadata>
       <Description>
-        <Label>Relaxed fit</Label>
-        <Name>The Westminster – Long Heritage Trench Coat</Name>
-        <Availability>Available in 3 colours</Availability>
+        {props.label !== ' ' &&
+          <Label label={props.label}>
+            {props.label}
+          </Label>}
+        <LinkStyled to={props.link}>
+          <Name>
+            {props.name}
+          </Name>
+        </LinkStyled>
+        {props.colors > 0 &&
+          <Availability colors={props.colors}>
+            Available in&nbsp;
+            <LinkStyled underline to={props.link}>
+              {props.colors}&nbsp;
+              <FormattedPlural value={props.colors} one="color" other="colors" />
+            </LinkStyled>
+          </Availability>}
         <Price>
           <FormattedNumber
-            value={1350}
+            value={props.price}
             style="currency"
-            currency="RUB"
+            currency={props.currency}
             currencyDisplay="symbol"
             minimumFractionDigits={0}
           />
@@ -97,4 +124,21 @@ export default () =>
       </Description>
       <Like type="button">Like</Like>
     </Metadata>
-  </Card>);
+  </CardStyled>);
+
+Card.defaultProps = {
+  label: ' ',
+  colors: 0,
+};
+
+Card.propTypes = {
+  link: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  photoUrl: PropTypes.string.isRequired,
+  colors: PropTypes.number,
+  price: PropTypes.number.isRequired,
+  currency: PropTypes.string.isRequired,
+};
+
+export default Card;

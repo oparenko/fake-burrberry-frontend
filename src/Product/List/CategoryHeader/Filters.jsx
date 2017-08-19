@@ -44,7 +44,7 @@ const Dropdown = styled.button`
   align-items: center;
 
   & + & {
-    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   &:after {
@@ -64,6 +64,16 @@ const Dropdown = styled.button`
   }
 `;
 
+const SortBy = styled.div`
+  margin-left: 1rem;
+  padding-right: .5rem;
+
+  @media screen and (min-width: 48rem) {
+    margin-left: 0;
+    padding-right: 0;
+  }
+`;
+
 export default () =>
   (<Wrapper>
     <Filters>
@@ -74,7 +84,7 @@ export default () =>
       <Dropdown>Colour</Dropdown>
       <Dropdown>Size</Dropdown>
     </Filters>
-    <div>
+    <SortBy>
       <Dropdown>Sort by Price</Dropdown>
-    </div>
+    </SortBy>
   </Wrapper>);

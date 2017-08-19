@@ -37,27 +37,19 @@ const Photo = styled.img`
 export default () =>
   (<Slider>
     <Photo
-      src="/img/Long-Cotton-Gabardine-Car-Coat-1.jpg"
-      srcSet="/img/Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x,
-              /img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x"
+      src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-1.jpg`}
       alt="Long Cotton Gabardine Car Coat"
     />
     <Photo
-      src="/img/Long-Cotton-Gabardine-Car-Coat-2.jpg"
-      srcSet="/img/Long-Cotton-Gabardine-Car-Coat-2@2x.jpg 2x,
-              /img/Long-Cotton-Gabardine-Car-Coat-2@3x.jpg 3x"
+      src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-2.jpg`}
       alt="Long Cotton Gabardine Car Coat"
     />
     <Photo
-      src="/img/Long-Cotton-Gabardine-Car-Coat-3.jpg"
-      srcSet="/img/Long-Cotton-Gabardine-Car-Coat-3@2x.jpg 2x,
-              /img/Long-Cotton-Gabardine-Car-Coat-3@3x.jpg 3x"
+      src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-3.jpg`}
       alt="Long Cotton Gabardine Car Coat"
     />
     <Photo
-      src="/img/Long-Cotton-Gabardine-Car-Coat-4.jpg"
-      srcSet="/img/Long-Cotton-Gabardine-Car-Coat-4@2x.jpg 2x,
-              /img/Long-Cotton-Gabardine-Car-Coat-4@3x.jpg 3x"
+      src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-4.jpg`}
       alt="Long Cotton Gabardine Car Coat"
     />
   </Slider>);

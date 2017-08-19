@@ -86,7 +86,10 @@ export default () =>
       <div className="row">
         <div className="col-xs-6 col-md-3">
           <Card>
-            <Image src="/img/Embroided-Hooded.jpg" alt="Embroided Hooded" />
+            <Image
+              src={`${process.env.PUBLIC_URL}/img/Embroided-Hooded.jpg`}
+              alt="Embroided Hooded"
+            />
             <Name>Embroided Hooded Content For Three Lines</Name>
             <Price>
               <FormattedNumber
@@ -101,7 +104,10 @@ export default () =>
         </div>
         <div className="col-xs-6 col-md-3">
           <Card>
-            <Image src="/img/Relaxed-Fit-Stretch-Jeans.jpg" alt="Relaxed Fit Stretch Jeans" />
+            <Image
+              src={`${process.env.PUBLIC_URL}/img/Relaxed-Fit-Stretch-Jeans.jpg`}
+              alt="Relaxed Fit Stretch Jeans"
+            />
             <Name>Relaxed Fit Stretch Jeans Content For Three Lines</Name>
             <Price>
               <FormattedNumber
@@ -116,7 +122,10 @@ export default () =>
         </div>
         <div className="col-xs-6 col-md-3">
           <Card>
-            <Image src="/img/Leather-and-House-Check.jpg" alt="Leather and House Check" />
+            <Image
+              src={`${process.env.PUBLIC_URL}/img/Leather-and-House-Check.jpg`}
+              alt="Leather and House Check"
+            />
             <Name>Leather and House Check Content For Three Lines</Name>
             <Price>
               <FormattedNumber
@@ -131,7 +140,10 @@ export default () =>
         </div>
         <div className="col-xs-6 col-md-3">
           <Card>
-            <Image src="/img/Leather-Wingtip-Check.jpg" alt="Leather Wingtip Check" />
+            <Image
+              src={`${process.env.PUBLIC_URL}/img/Leather-Wingtip-Check.jpg`}
+              alt="Leather Wingtip Check"
+            />
             <Name>Leather Wingtip Check Content For Three Lines</Name>
             <Price>
               <FormattedNumber

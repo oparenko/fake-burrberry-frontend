@@ -73,9 +73,7 @@ export default () =>
             </MaxLarge>
             <MinLarge>
               <FeaturedImage
-                src="/img/Long-Cotton-Gabardine-Car-Coat-1.jpg"
-                srcSet="/img/Long-Cotton-Gabardine-Car-Coat-1@2x.jpg 2x,
-                        /img/Long-Cotton-Gabardine-Car-Coat-1@3x.jpg 3x"
+                src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-1.jpg`}
                 alt="Long Cotton Gabardine Car Coat"
               />
             </MinLarge>
@@ -121,7 +119,7 @@ export default () =>
           </div>
           <div className="col-lg-8">
             <DescriptionImage
-              src="/img/Long-Cotton-Gabardine-Car-Coat-Detail-1.jpg"
+              src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-Detail-1.jpg`}
               alt="Long Cotton Gabardine Car Coat Detail"
             />
           </div>
@@ -131,26 +129,20 @@ export default () =>
             <div className="col-lg-4">
               <Shot
                 first
-                src="/img/Long-Cotton-Gabardine-Car-Coat-Detail-2.jpg"
-                srcSet="/img/Long-Cotton-Gabardine-Car-Coat-Detail-2@2x.jpg 2x,
-                        /img/Long-Cotton-Gabardine-Car-Coat-Detail-2@3x.jpg 3x"
+                src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-Detail-2.jpg`}
                 alt="Long Cotton Gabardine Car Coat Detail"
               />
             </div>
             <div className="col-lg-4">
               <Shot
                 second
-                src="/img/Long-Cotton-Gabardine-Car-Coat-Detail-3.jpg"
-                srcSet="/img/Long-Cotton-Gabardine-Car-Coat-Detail-3@2x.jpg 2x,
-                        /img/Long-Cotton-Gabardine-Car-Coat-Detail-3@3x.jpg 3x"
+                src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-Detail-3.jpg`}
                 alt="Long Cotton Gabardine Car Coat Detail"
               />
             </div>
             <div className="col-lg-4">
               <Shot
-                src="/img/Long-Cotton-Gabardine-Car-Coat-Detail-4.jpg"
-                srcSet="/img/Long-Cotton-Gabardine-Car-Coat-Detail-4@2x.jpg 2x,
-                        /img/Long-Cotton-Gabardine-Car-Coat-Detail-4@3x.jpg 3x"
+                src={`${process.env.PUBLIC_URL}/img/Long-Cotton-Gabardine-Car-Coat-Detail-4.jpg`}
                 alt="Long Cotton Gabardine Car Coat Detail"
               />
             </div>

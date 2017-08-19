@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MaxSmall } from '../../../Common/Breakpoints';
 import arrow from './arrow.svg';
 
 const Wrapper = styled.div`
@@ -19,17 +18,6 @@ const Wrapper = styled.div`
 `;
 
 const Filters = styled.div`display: flex;`;
-
-const Title = styled.h4`
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  line-height: 1rem;
-  font-weight: 400;
-  margin-top: 0;
-  margin-right: 2rem;
-  margin-bottom: 0;
-  margin-left: 0;
-`;
 
 const Dropdown = styled.button`
   font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -79,9 +67,6 @@ const SortBy = styled.div`
 export default () =>
   (<Wrapper>
     <Filters>
-      <MaxSmall>
-        <Title>Refine by</Title>
-      </MaxSmall>
       <Dropdown>Category</Dropdown>
       <Dropdown>Colour</Dropdown>
       <Dropdown>Size</Dropdown>

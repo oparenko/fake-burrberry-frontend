@@ -17,7 +17,7 @@ export const MinMedium = ({ children }) =>
   </Responsive>);
 
 export const OnlyMedium = ({ children }) =>
-  (<Responsive minWidth={'768'} maxWidth={992}>
+  (<Responsive minWidth={768} maxWidth={992}>
     {children}
   </Responsive>);
 

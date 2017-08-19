@@ -17,7 +17,7 @@ export default () =>
   (<IntlProvider locale="ru">
     <Router>
       <div>
-        <Helmet defaultTitle="Burrberry" titleTemplate="%s Burrberry" />
+        <Helmet defaultTitle="Burberry" titleTemplate="%s | Burberry" />
         <Header />
         <Switch>
           <Route exact path="/products/:section/" component={List} />

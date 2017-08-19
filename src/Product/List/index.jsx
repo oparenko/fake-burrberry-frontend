@@ -28,10 +28,10 @@ const Divider = styled.hr`
   border: none;
 `;
 
-const Heritage = [
+const heritage = [
   {
     id: 1,
-    link: '/products/men/heritage-trench-coats/the-westminster–long-heritage-trench-coat',
+    uid: 'the-westminster',
     label: 'Relaxed fit',
     name: 'The Westminster – Long Heritage Trench Coat',
     photoUrl:
@@ -42,7 +42,7 @@ const Heritage = [
   },
   {
     id: 2,
-    link: '/products/men/heritage-trench-coats/the-kensington-mid-length-heritage-trench-coat',
+    uid: 'the-kensington',
     label: 'Classic fit',
     name: 'The Kensington – Mid-Length Heritage Trench Coat',
     photoUrl:
@@ -53,7 +53,7 @@ const Heritage = [
   },
   {
     id: 3,
-    link: '/products/men/heritage-trench-coats/the-sandringham-mid-length-heritage-trench-coat',
+    uid: 'the-sandringham',
     label: 'Toilered fit',
     name: 'The Sandringham – Mid-length Heritage Trench Coat',
     photoUrl:
@@ -64,7 +64,7 @@ const Heritage = [
   },
   {
     id: 4,
-    link: '/products/men/heritage-trench-coats/the-chelsea–short-heritage-trench-coat',
+    uid: 'the-chelsea',
     label: 'Slim fit',
     name: 'The Chelsea – Short Heritage Trench Coat',
     photoUrl:
@@ -75,7 +75,7 @@ const Heritage = [
   },
   {
     id: 5,
-    link: '/products/men/heritage-trench-coats/the-westminster–long-heritage-trench-coat',
+    uid: 'the-westminster',
     label: 'Relaxed fit',
     name: 'The Westminster – Long Heritage Trench Coat',
     photoUrl:
@@ -86,7 +86,7 @@ const Heritage = [
   },
   {
     id: 6,
-    link: '/products/men/heritage-trench-coats/the-kensington-mid-length-heritage-trench-coat',
+    uid: 'the-kensington',
     label: 'Classic fit',
     name: 'The Kensington – Mid-Length Heritage Trench Coat',
     photoUrl:
@@ -97,7 +97,7 @@ const Heritage = [
   },
   {
     id: 7,
-    link: '/products/men/heritage-trench-coats/the-sandringham-mid-length-heritage-trench-coat',
+    uid: 'the-sandringham',
     label: 'Toilered fit',
     name: 'The Sandringham – Mid-length Heritage Trench Coat',
     photoUrl:
@@ -108,7 +108,7 @@ const Heritage = [
   },
   {
     id: 8,
-    link: '/products/men/heritage-trench-coats/the-chelsea–short-heritage-trench-coat',
+    uid: 'the-chelsea',
     label: 'Slim fit',
     name: 'The Chelsea – Short Heritage Trench Coat',
     photoUrl:
@@ -119,10 +119,10 @@ const Heritage = [
   },
 ];
 
-const SingleBreasted = [
+const singleBreasted = [
   {
     id: 1,
-    link: '/products/men/single-breasted-trench-coats/the-brighton–longline-car-coat',
+    uid: 'the-brighton',
     label: 'Online exclusive',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -133,7 +133,7 @@ const SingleBreasted = [
   },
   {
     id: 2,
-    link: '/products/men/single-breasted-trench-coats/the-brighton–longline-car-coat',
+    uid: 'the-brighton',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -144,7 +144,7 @@ const SingleBreasted = [
   },
   {
     id: 3,
-    link: '/products/men/single-breasted-trench-coats/the-brighton–longline-car-coat',
+    uid: 'the-brighton',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -155,7 +155,7 @@ const SingleBreasted = [
   },
   {
     id: 4,
-    link: '/products/men/single-breasted-trench-coats/the-brighton–longline-car-coat',
+    uid: 'the-brighton',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -166,7 +166,7 @@ const SingleBreasted = [
   },
   {
     id: 5,
-    link: '/products/men/single-breasted-trench-coats/the-camden–mid-length-car-coat',
+    uid: 'the-camden',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -177,7 +177,7 @@ const SingleBreasted = [
   },
   {
     id: 6,
-    link: '/products/men/single-breasted-trench-coats/the-camden–mid-length-car-coat',
+    uid: 'the-camden',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -188,7 +188,7 @@ const SingleBreasted = [
   },
   {
     id: 7,
-    link: '/products/men/single-breasted-trench-coats/the-camden–mid-length-car-coat',
+    uid: 'the-camden',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -199,7 +199,7 @@ const SingleBreasted = [
   },
   {
     id: 8,
-    link: '/products/men/single-breasted-trench-coats/the-camden–mid-length-car-coat',
+    uid: 'the-camden',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -213,23 +213,23 @@ const SingleBreasted = [
 export default () =>
   (<main>
     <Helmet>
-      <title>Men&apos;s Coats | Pea, Duffle & Top Coats |</title>
+      <title>Men&apos;s Coats | Pea, Duffle & Top Coats</title>
     </Helmet>
     <CategoryHeader />
     <div className="container">
       <section>
         <SectionTitle>Heritage Trench Coats</SectionTitle>
         <div className="row">
-          {Heritage.map(item =>
-            (<div className="col-xs-6 col-md-3" key={item.id}>
+          {heritage.map(product =>
+            (<div className="col-xs-6 col-md-3" key={product.id}>
               <Card
-                link={item.link}
-                label={item.label}
-                name={item.name}
-                photoUrl={item.photoUrl}
-                colors={item.colors}
-                price={item.price}
-                currency={item.currency}
+                id={product.id}
+                label={product.label}
+                name={product.name}
+                photoUrl={product.photoUrl}
+                colors={product.colors}
+                price={product.price}
+                currency={product.currency}
               />
             </div>),
           )}
@@ -239,16 +239,16 @@ export default () =>
       <section>
         <SectionTitle>Single Breasted Trench Coats</SectionTitle>
         <div className="row">
-          {SingleBreasted.map(item =>
-            (<div className="col-xs-6 col-md-3" key={item.id}>
+          {singleBreasted.map(product =>
+            (<div className="col-xs-6 col-md-3" key={product.id}>
               <Card
-                link={item.link}
-                label={item.label}
-                name={item.name}
-                photoUrl={item.photoUrl}
-                colors={item.colors}
-                price={item.price}
-                currency={item.currency}
+                id={product.id}
+                label={product.label}
+                name={product.name}
+                photoUrl={product.photoUrl}
+                colors={product.colors}
+                price={product.price}
+                currency={product.currency}
               />
             </div>),
           )}

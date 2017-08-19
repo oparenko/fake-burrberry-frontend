@@ -4,34 +4,39 @@ import styled from 'styled-components';
 
 const Wrapper = styled.nav`text-align: center;`;
 
-const LinkStyled = styled(NavLink)`
+const activeClassName = 'nav-item-active';
+
+const NavItem = styled(NavLink).attrs({
+  activeClassName,
+})`
   display: inline-block;
   padding-top: 1rem;
   padding-right: 1rem;
   padding-bottom: calc(1rem - 1px);
   padding-left: 1rem;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: Raleway, 'Helvetica Neue', Helvetica, Arial;
   font-size: .75rem;
+  font-weight: 600;
   line-height: 1rem;
   letter-spacing: 1.5px;
+  color: #999999;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${props => (props.active ? '#171717' : '#999999')};
-  border-bottom: 1px solid transparent;
-  border-bottom-color: ${props => (props.active ? '#171717' : 'transparent')};
+
+  &.${activeClassName} {
+    color: #171717;
+    border-bottom: 1px solid #171717;
+  }
 `;
 
 export default function () {
   return (
     <Wrapper>
-      <LinkStyled to="/products/women/">Women</LinkStyled>
-      <LinkStyled active to="/products/men">
-        Men
-      </LinkStyled>
-      <LinkStyled to="/products/children/">Children</LinkStyled>
-      <LinkStyled to="/products/beauty/">Beauty</LinkStyled>
-      <LinkStyled to="/products/experience/">Experience</LinkStyled>
+      <NavItem to="/products/women/">Women</NavItem>
+      <NavItem to="/products/men">Men</NavItem>
+      <NavItem to="/products/children/">Children</NavItem>
+      <NavItem to="/products/beauty/">Beauty</NavItem>
+      <NavItem to="/products/experience/">Experience</NavItem>
     </Wrapper>
   );
 }

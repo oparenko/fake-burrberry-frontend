@@ -48,13 +48,15 @@ const Dropdown = styled.button`
   }
 
   &:after {
+    margin-top: 1px;
+    margin-left: .5rem;
     content: '';
     display: inline-block;
     background-image: url(${arrow});
-    background-size: 12px 6px;
+    background-repeat: none;
+    background-size: cover;
     width: 12px;
     height: 6px;
-    margin-left: .5rem;
   }
 
   @media screen and (min-width: 48rem) {
@@ -85,6 +87,6 @@ export default () =>
       <Dropdown>Size</Dropdown>
     </Filters>
     <SortBy>
-      <Dropdown>Sort by Price</Dropdown>
+      <Dropdown>Sort by price</Dropdown>
     </SortBy>
   </Wrapper>);

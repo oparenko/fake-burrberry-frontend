@@ -61,7 +61,7 @@ const Name = styled.h3`
     line-height: 1.25rem;
   }
 
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 62rem) {
     font-size: 1rem;
     line-height: 1.25rem;
   }

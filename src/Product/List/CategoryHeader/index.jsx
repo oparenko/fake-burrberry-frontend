@@ -60,7 +60,7 @@ const More = styled.button`
 export default () =>
   (<Wrapper>
     <div className="container">
-      <Title>Men&apos;s Clothing</Title>
+      <Title>Men&rsquo;s Clothing</Title>
       <div className="row">
         <div className="col-xs-12 col-md-9 col-lg-7">
           <Description>

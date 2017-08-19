@@ -11,7 +11,7 @@ const SectionTitle = styled.h2`
   font-family: "Lora", "Times New Roman", serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.1875rem;
+  line-height: 1.25rem;
   color: #171717;
 
   @media screen and (min-width: 48rem) {
@@ -26,10 +26,6 @@ const Divider = styled.hr`
   height: 1px;
   background-color: #c6c6c6;
   border: none;
-
-  @media screen and (min-width: 48rem) {
-    margin-top: 2rem;
-  }
 `;
 
 const Heritage = [

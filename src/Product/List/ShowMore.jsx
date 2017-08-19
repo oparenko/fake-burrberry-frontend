@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 
   @media screen and (min-width: 48rem) {
@@ -17,8 +17,14 @@ const Showing = styled.h4`
   margin-bottom: 1rem;
   font-family: "Lora", Helvetica, Arial, serif;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.1875rem;
   font-weight: 400;
+
+  @media screen and (min-width: 48rem) {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
 `;
 
 const Button = styled.button`

@@ -55,6 +55,16 @@ const Name = styled.h3`
   font-size: .75rem;
   font-weight: 600;
   line-height: 1rem;
+
+  @media screen and (min-width: 48rem) {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+
+  @media screen and (min-width: 48rem) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 `;
 
 const Price = styled.h5`

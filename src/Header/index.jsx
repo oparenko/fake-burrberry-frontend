@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { MaxSmall, MinMedium } from '../Common/Breakpoints';
 import MenuFull from './MenuFull';
 import logo from './logo.svg';
@@ -33,7 +34,7 @@ const Logo = styled.img`
   }
 `;
 
-const Link = styled.a`
+const LinkStyled = styled(Link)`
   text-align: center;
   line-height: 0;
 `;
@@ -83,9 +84,9 @@ export default () =>
         <MinMedium>
           <Location type="button">Shopping in: United Kingdom (£)</Location>
         </MinMedium>
-        <Link href="#">
+        <LinkStyled to="/">
           <Logo src={logo} alt="Burrberry Logo" />
-        </Link>
+        </LinkStyled>
       </div>
     </Header>
     <MinMedium>

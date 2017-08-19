@@ -35,7 +35,7 @@ const Divider = styled.hr`
 const Heritage = [
   {
     id: 1,
-    link: '/products/product1',
+    link: '/products/men/heritage-trench-coats/the-westminster–long-heritage-trench-coat',
     label: 'Relaxed fit',
     name: 'The Westminster – Long Heritage Trench Coat',
     photoUrl:
@@ -46,7 +46,7 @@ const Heritage = [
   },
   {
     id: 2,
-    link: '/products/product2',
+    link: '/products/men/heritage-trench-coats/the-kensington-mid-length-heritage-trench-coat',
     label: 'Classic fit',
     name: 'The Kensington – Mid-Length Heritage Trench Coat',
     photoUrl:
@@ -57,7 +57,7 @@ const Heritage = [
   },
   {
     id: 3,
-    link: '/products/product3',
+    link: '/products/men/heritage-trench-coats/the-sandringham-mid-length-heritage-trench-coat',
     label: 'Toilered fit',
     name: 'The Sandringham – Mid-length Heritage Trench Coat',
     photoUrl:
@@ -68,7 +68,7 @@ const Heritage = [
   },
   {
     id: 4,
-    link: '/products/product4',
+    link: '/products/men/heritage-trench-coats/the-chelsea–short-heritage-trench-coat',
     label: 'Slim fit',
     name: 'The Chelsea – Short Heritage Trench Coat',
     photoUrl:
@@ -79,7 +79,7 @@ const Heritage = [
   },
   {
     id: 5,
-    link: '/products/product1',
+    link: '/products/men/heritage-trench-coats/the-westminster–long-heritage-trench-coat',
     label: 'Relaxed fit',
     name: 'The Westminster – Long Heritage Trench Coat',
     photoUrl:
@@ -90,7 +90,7 @@ const Heritage = [
   },
   {
     id: 6,
-    link: '/products/product2',
+    link: '/products/men/heritage-trench-coats/the-kensington-mid-length-heritage-trench-coat',
     label: 'Classic fit',
     name: 'The Kensington – Mid-Length Heritage Trench Coat',
     photoUrl:
@@ -101,7 +101,7 @@ const Heritage = [
   },
   {
     id: 7,
-    link: '/products/product3',
+    link: '/products/men/heritage-trench-coats/the-sandringham-mid-length-heritage-trench-coat',
     label: 'Toilered fit',
     name: 'The Sandringham – Mid-length Heritage Trench Coat',
     photoUrl:
@@ -112,7 +112,7 @@ const Heritage = [
   },
   {
     id: 8,
-    link: '/products/product4',
+    link: '/products/men/heritage-trench-coats/the-chelsea–short-heritage-trench-coat',
     label: 'Slim fit',
     name: 'The Chelsea – Short Heritage Trench Coat',
     photoUrl:
@@ -126,7 +126,7 @@ const Heritage = [
 const SingleBreasted = [
   {
     id: 1,
-    link: '/products/product1',
+    link: '/products/men/single-breasted-trench-coats/the-brighton–longline-car-coat',
     label: 'Online exclusive',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -137,7 +137,7 @@ const SingleBreasted = [
   },
   {
     id: 2,
-    link: '/products/product2',
+    link: '/products/men/single-breasted-trench-coats/the-brighton–longline-car-coat',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -148,7 +148,7 @@ const SingleBreasted = [
   },
   {
     id: 3,
-    link: '/products/product3',
+    link: '/products/men/single-breasted-trench-coats/the-brighton–longline-car-coat',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -159,7 +159,7 @@ const SingleBreasted = [
   },
   {
     id: 4,
-    link: '/products/product4',
+    link: '/products/men/single-breasted-trench-coats/the-brighton–longline-car-coat',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -170,7 +170,7 @@ const SingleBreasted = [
   },
   {
     id: 5,
-    link: '/products/product1',
+    link: '/products/men/single-breasted-trench-coats/the-camden–mid-length-car-coat',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -181,7 +181,7 @@ const SingleBreasted = [
   },
   {
     id: 6,
-    link: '/products/product2',
+    link: '/products/men/single-breasted-trench-coats/the-camden–mid-length-car-coat',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -192,7 +192,7 @@ const SingleBreasted = [
   },
   {
     id: 7,
-    link: '/products/product3',
+    link: '/products/men/single-breasted-trench-coats/the-camden–mid-length-car-coat',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -203,7 +203,7 @@ const SingleBreasted = [
   },
   {
     id: 8,
-    link: '/products/product4',
+    link: '/products/men/single-breasted-trench-coats/the-camden–mid-length-car-coat',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:

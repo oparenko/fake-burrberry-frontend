@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.nav`text-align: center;`;
 
-const LinkStyled = styled(Link)`
+const LinkStyled = styled(NavLink)`
   display: inline-block;
   padding-top: 1rem;
   padding-right: 1rem;
@@ -25,13 +25,13 @@ const LinkStyled = styled(Link)`
 export default function () {
   return (
     <Wrapper>
-      <LinkStyled to="">Women</LinkStyled>
+      <LinkStyled to="/products/women/">Women</LinkStyled>
       <LinkStyled active to="/products/men">
         Men
       </LinkStyled>
-      <LinkStyled to="">Children</LinkStyled>
-      <LinkStyled to="">Beauty</LinkStyled>
-      <LinkStyled to="">Experience</LinkStyled>
+      <LinkStyled to="/products/children/">Children</LinkStyled>
+      <LinkStyled to="/products/beauty/">Beauty</LinkStyled>
+      <LinkStyled to="/products/experience/">Experience</LinkStyled>
     </Wrapper>
   );
 }

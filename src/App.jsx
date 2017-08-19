@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import { IntlProvider, addLocaleData } from 'react-intl';
@@ -14,16 +14,18 @@ import Footer from './Footer';
 addLocaleData([...en, ...ru]);
 
 export default () =>
-  (<Router>
-    <IntlProvider locale={navigator.language}>
+  (<IntlProvider locale="ru">
+    <Router>
       <div>
         <Helmet defaultTitle="Burrberry" titleTemplate="%s Burrberry" />
         <Header />
-
-        <Route exact path="/products" component={List} />
-        <Route path="/product" component={Show} />
-
+        <Switch>
+          <Route exact path="/products/:section/" component={List} />
+          <Route exact path="/products/:section/:category" component={List} />
+          <Route path="/products/:section/:category/:id" component={Show} />
+          <Redirect from="/" to="/products/men/" />
+        </Switch>
         <Footer />
       </div>
-    </IntlProvider>
-  </Router>);
+    </Router>
+  </IntlProvider>);

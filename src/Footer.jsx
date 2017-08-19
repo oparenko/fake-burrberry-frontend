@@ -16,9 +16,9 @@ const Footer = styled.footer`
     padding-left: 0;
   }
 
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 62rem) {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
 `;
 
@@ -30,6 +30,7 @@ const Navigation = styled.div`
 
   @media screen and (min-width: 48rem) {
     display: block;
+    padding-bottom: 3rem;
   }
 `;
 

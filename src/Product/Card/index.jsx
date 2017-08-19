@@ -101,7 +101,7 @@ const Like = styled.button`
 
 const Card = props =>
   (<CardStyled>
-    <LinkStyled to={`/products/men/trench-coats/${props.uid}`}>
+    <LinkStyled to={props.to}>
       <Image src={props.photoUrl} alt={props.name} />
     </LinkStyled>
     <Metadata>
@@ -110,7 +110,7 @@ const Card = props =>
           <Label label={props.label}>
             {props.label}
           </Label>}
-        <LinkStyled to={`/products/men/trench-coats/${props.uid}`}>
+        <LinkStyled to={props.to}>
           <Name>
             {props.name}
           </Name>
@@ -118,7 +118,7 @@ const Card = props =>
         {props.colors > 0 &&
           <Availability colors={props.colors}>
             Available in&nbsp;
-            <LinkStyled underline to={`/products/men/trench-coats/${props.uid}`}>
+            <LinkStyled underline to={props.to}>
               {props.colors}&nbsp;
               <FormattedPlural value={props.colors} one="color" other="colors" />
             </LinkStyled>
@@ -143,7 +143,7 @@ Card.defaultProps = {
 };
 
 Card.propTypes = {
-  uid: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
   photoUrl: PropTypes.string.isRequired,

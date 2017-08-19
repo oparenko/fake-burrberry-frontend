@@ -4,11 +4,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.nav`text-align: center;`;
 
-const activeClassName = 'nav-item-active';
-
-const NavItem = styled(NavLink).attrs({
-  activeClassName,
-})`
+const NavItem = styled(NavLink)`
   display: inline-block;
   padding-top: 1rem;
   padding-right: 1rem;
@@ -23,7 +19,7 @@ const NavItem = styled(NavLink).attrs({
   text-transform: uppercase;
   text-decoration: none;
 
-  &.${activeClassName} {
+  &.active {
     color: #171717;
     border-bottom: 1px solid #171717;
   }

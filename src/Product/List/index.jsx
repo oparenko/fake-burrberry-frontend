@@ -223,7 +223,7 @@ export default () =>
           {heritage.map(product =>
             (<div className="col-xs-6 col-md-3" key={product.id}>
               <Card
-                id={product.id}
+                to={`/products/men/trench-coats/${product.uid}`}
                 label={product.label}
                 name={product.name}
                 photoUrl={product.photoUrl}
@@ -242,7 +242,7 @@ export default () =>
           {singleBreasted.map(product =>
             (<div className="col-xs-6 col-md-3" key={product.id}>
               <Card
-                id={product.id}
+                to={`/products/men/trench-coats/${product.uid}`}
                 label={product.label}
                 name={product.name}
                 photoUrl={product.photoUrl}

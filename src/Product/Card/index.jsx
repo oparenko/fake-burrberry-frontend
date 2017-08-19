@@ -87,6 +87,7 @@ const Availability = styled.p`
 `;
 
 const Like = styled.button`
+  margin-left: 1rem;
   white-space: nowrap;
   text-indent: -9999px;
   background: url(${like});

@@ -122,8 +122,6 @@ export default () =>
           <div className="col-lg-8">
             <DescriptionImage
               src="/img/Long-Cotton-Gabardine-Car-Coat-Detail-1.jpg"
-              srcSet="/img/Long-Cotton-Gabardine-Car-Coat-Detail-1@2x.jpg 2x,
-                      /img/Long-Cotton-Gabardine-Car-Coat-Detail-1@3x.jpg 3x"
               alt="Long Cotton Gabardine Car Coat Detail"
             />
           </div>

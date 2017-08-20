@@ -72,8 +72,8 @@ export default () =>
     <div className="row middle-lg">
       <div className="col-md-7">
         <Image
-          src="img/Shipping.jpg"
-          srcset="img/Shipping@2x.jpg 2x, img/Shipping@3x.jpg 3x"
+          src="/img/Shipping.jpg"
+          srcset="/img/Shipping@2x.jpg 2x, /img/Shipping@3x.jpg 3x"
           alt="Shipping"
         />
       </div>

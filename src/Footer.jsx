@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { MinLarge } from './Common/Breakpoints';
 
 const Footer = styled.footer`
   margin-top: 4rem;
   padding-top: 2rem;
-  padding-right: .5rem;
   padding-bottom: 2rem;
-  padding-left: .5rem;
   background-color: #f3f3f3;
 
   @media screen and (min-width: 48rem) {
@@ -15,9 +14,9 @@ const Footer = styled.footer`
     padding-left: 0;
   }
 
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 62rem) {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
 `;
 
@@ -29,6 +28,10 @@ const Navigation = styled.div`
 
   @media screen and (min-width: 48rem) {
     display: block;
+  }
+
+  @media screen and (min-width: 62rem) {
+    padding-bottom: 3rem;
   }
 `;
 
@@ -67,7 +70,7 @@ const Button = styled.button`
   display: block;
   margin-bottom: 1rem;
   padding: 0;
-  color: #999;
+  color: #171717;
   border: none;
   background-color: inherit;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -84,6 +87,8 @@ const Button = styled.button`
     margin-bottom: 0;
   }
 `;
+
+const Caption = styled.span`color: #999;`;
 
 const NeedHelp = styled.div`
   text-align: center;
@@ -109,6 +114,26 @@ const NeedHelpLink = styled.a`
   font-size: .875rem;
   font-style: italic;
   line-height: 1.0625rem;
+`;
+
+const StoreImage = styled.img`
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+`;
+
+const FindStore = styled.a`
+  margin-top: 1rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1rem;
+  text-align: left;
+  color: #171717;
+  border-bottom: 1px solid #171717;
+  text-decoration: none;
+  cursor: pointer;
 `;
 
 export default () =>
@@ -149,11 +174,24 @@ export default () =>
               <Link href="#">Japan Only - SCTL indications</Link>
             </nav>
           </div>
+          <MinLarge>
+            <div className="col-md-3">
+              <StoreImage
+                src="https://assets.burberry.com/is/image/Burberryltd/933f04c94a361dfd816c77528ec0e7286921051b.jpg?$BBY_V2_BASIC$&wid=464"
+                alt="Burrberry store"
+              />
+              <FindStore href="#">Find a Store</FindStore>
+            </div>
+          </MinLarge>
         </div>
       </Navigation>
       <Preferences>
-        <Button href="#">Shipping country: Russian Federation</Button>
-        <Button href="#">Language: English</Button>
+        <Button href="#">
+          <Caption>Shipping country:</Caption> Russian Federation
+        </Button>
+        <Button href="#">
+          <Caption>Language:</Caption> English
+        </Button>
       </Preferences>
       <NeedHelp>
         <NeedHelpTitle>Need help?</NeedHelpTitle>

@@ -15,7 +15,7 @@ before_deploy:
   - npm run build
 
 deploy:
-  skip cleanup: true
+  skip_cleanup: true
   - provider: script
     script: now alias $(now build -t=$NOW_TOKEN --public) $URL_DEV -t=$NOW_TOKEN
     on:

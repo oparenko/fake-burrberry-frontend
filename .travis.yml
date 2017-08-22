@@ -1,9 +1,26 @@
 language: node_js
 node_js:
-    - "7"
-    - "8"
-sudo: false
+- '7'
+- '8'
 
-# Run npm test always
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
 script:
-    - "npm run test"
+  - npm run test
+
+before_deploy:
+  - npm run build
+
+deploy:
+  - provider: script
+    script: now alias $(now build -t=$NOW_TOKEN --public) $URL_DEV -t=$NOW_TOKEN
+    on:
+      branch: develop
+
+  - provider: script
+    script: now alias $(now build -t=$NOW_TOKEN --public) $URL_PROD -t=$NOW_TOKEN
+    on:
+      branch: master

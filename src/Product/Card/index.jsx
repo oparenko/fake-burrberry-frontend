@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { FormattedNumber, FormattedPlural } from 'react-intl';
 import { Link } from 'react-router-dom';
-import like from './like.svg';
+import LikeButton from './LikeButton';
 
 const CardStyled = styled.div`
   display: block;
@@ -86,19 +86,6 @@ const Availability = styled.p`
   line-height: 1rem;
 `;
 
-const Like = styled.button`
-  margin-left: 1rem;
-  white-space: nowrap;
-  text-indent: -9999px;
-  background: url(${like});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: .875rem .875rem;
-  width: .875rem;
-  height: .875rem;
-  border: 0;
-`;
-
 const Card = props =>
   (<CardStyled>
     <LinkStyled to={props.to}>
@@ -133,7 +120,7 @@ const Card = props =>
           />
         </Price>
       </Description>
-      <Like type="button">Like</Like>
+      <LikeButton />
     </Metadata>
   </CardStyled>);
 

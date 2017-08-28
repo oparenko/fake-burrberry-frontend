@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Heart from './Heart';
+import PropTypes from 'prop-types';
+import Heart from '../../Icons/Heart';
 
 const Button = styled.button`
   align-self: flex-start;
@@ -30,8 +31,12 @@ export default class LikeButton extends Component {
     return (
       <Button type="button" title={this.label} onClick={this.handleClick}>
         {this.label}
-        <Heart isLiked={this.state.isLiked} />
+        <Heart fillColor={this.state.isLiked ? '#171717' : 'none'} />
       </Button>
     );
   }
 }
+
+Heart.propTypes = {
+  isLiked: PropTypes.bool.isRequired,
+};

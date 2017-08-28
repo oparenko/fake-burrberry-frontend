@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 export default function Heart(props) {
   return (
     <svg
-      fill={props.isLiked ? '#171717' : 'none'}
+      fill={props.fillColor}
       width="14px"
       height="14px"
       viewBox="0 0 16 15"
@@ -28,7 +27,3 @@ export default function Heart(props) {
     </svg>
   );
 }
-
-Heart.propTypes = {
-  isLiked: PropTypes.bool.isRequired,
-};

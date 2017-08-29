@@ -3,7 +3,7 @@ import React from 'react';
 export default function Heart(props) {
   return (
     <svg
-      fill={props.fillColor}
+      fill={props.fill}
       width={props.width}
       height={props.height}
       viewBox="0 0 16 15"

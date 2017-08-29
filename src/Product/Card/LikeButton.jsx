@@ -31,7 +31,11 @@ export default class LikeButton extends Component {
     return (
       <Button type="button" title={this.label} onClick={this.handleClick}>
         {this.label}
-        <Heart fillColor={this.state.isLiked ? '#171717' : 'none'} />
+        <Heart
+          fillColor={this.state.isLiked ? '#171717' : 'none'}
+          height="0.875rem"
+          width="0.875rem"
+        />
       </Button>
     );
   }

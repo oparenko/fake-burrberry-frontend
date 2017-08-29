@@ -4,8 +4,8 @@ export default function Heart(props) {
   return (
     <svg
       fill={props.fillColor}
-      width="14px"
-      height="14px"
+      width={props.width}
+      height={props.height}
       viewBox="0 0 16 15"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

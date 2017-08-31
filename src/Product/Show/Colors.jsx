@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const Colors = styled.section`
+const StyledColors = styled.section`
   margin-top: 1rem;
   margin-right: .5rem;
   margin-left: .5rem;
@@ -39,8 +39,8 @@ const Button = styled.button`
   margin-right: 1rem;
   white-space: nowrap;
   text-indent: -9999px;
-  background: ${props => (props.color ? props.color : 'transparent')};
-  border: solid 1px ${props => (props.active ? '#232122' : 'transparent')};
+  background: ${props => props.hex};
+  border: solid 1px ${props => (props.isActive ? '#232122' : 'transparent')};
   border-radius: 50%;
   line-height: 1;
   cursor: pointer;
@@ -58,18 +58,53 @@ const Divider = styled.hr`
   }
 `;
 
-export default () =>
-  (<Colors>
-    <Description>
-      Colour: <Selection>Honey</Selection>
-    </Description>
-    <Wrapper>
-      <Button color="black" name="black" type="button">
-        Change colour to black
-      </Button>
-      <Button active color="#cfa880" name="honey" type="button">
-        Change colour to honey
-      </Button>
-    </Wrapper>
-    <Divider />
-  </Colors>);
+class Colors extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  state = {
+    colors: [{ name: 'Honey', hex: '#cfa880' }, { name: 'Black', hex: '#272727' }],
+    selectedColor: 'Honey',
+  };
+
+  handleClick(e) {
+    this.setState({ selectedColor: e.target.name });
+  }
+
+  render() {
+    const selectedColor = this.state.selectedColor;
+
+    const colors = this.state.colors.map((color, key) => {
+      const isActive = this.state.selectedColor === color.name;
+
+      return (
+        <Button
+          key={key.toString()}
+          type="button"
+          onClick={this.handleClick}
+          isActive={isActive}
+          name={color.name}
+          hex={color.hex}
+        >
+          Select {color.name}
+        </Button>
+      );
+    });
+
+    return (
+      <StyledColors>
+        <Description>
+          Colour: <Selection>{selectedColor}</Selection>
+        </Description>
+        <Wrapper>
+          {colors}
+        </Wrapper>
+        <Divider />
+      </StyledColors>
+    );
+  }
+}
+
+export default Colors;

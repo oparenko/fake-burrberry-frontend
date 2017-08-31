@@ -34,13 +34,7 @@ const SelectedSize = styled.p`
   }
 `;
 
-const Selection = styled.strong`
-  font-weight: normal;
-
-  @media screen and (min-width: 62rem) {
-    font-weight: bold;
-  }
-`;
+const Selection = styled.strong`font-weight: bold;`;
 
 const Options = styled.div`
   margin: 0;

@@ -27,6 +27,8 @@ const Description = styled.p`
   line-height: 1rem;
 `;
 
+const Selection = styled.strong`font-weight: bold;`;
+
 const Wrapper = styled.div`display: flex;`;
 
 const Button = styled.button`
@@ -41,6 +43,7 @@ const Button = styled.button`
   border: solid 1px ${props => (props.active ? '#232122' : 'transparent')};
   border-radius: 50%;
   line-height: 1;
+  cursor: pointer;
 `;
 
 const Divider = styled.hr`
@@ -57,7 +60,9 @@ const Divider = styled.hr`
 
 export default () =>
   (<Colors>
-    <Description>Colour: Honey</Description>
+    <Description>
+      Colour: <Selection>Honey</Selection>
+    </Description>
     <Wrapper>
       <Button color="black" name="black" type="button">
         Change colour to black

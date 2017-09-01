@@ -39,7 +39,7 @@ const Button = styled.button`
   margin-right: 1rem;
   white-space: nowrap;
   text-indent: -9999px;
-  background: ${props => props.hex};
+  background: ${props => props.color};
   border: solid 1px ${props => (props.isActive ? '#232122' : 'transparent')};
   border-radius: 50%;
   line-height: 1;
@@ -58,48 +58,38 @@ const Divider = styled.hr`
   }
 `;
 
+const colors = [{ name: 'Honey', color: '#cfa880' }, { name: 'Black', color: '#272727' }];
+
 class Colors extends Component {
   constructor(props) {
     super(props);
+    this.state = { selectColorIndex: 0 };
     this.handleClick = this.handleClick.bind(this);
   }
 
-  state = {
-    colors: [{ name: 'Honey', hex: '#cfa880' }, { name: 'Black', hex: '#272727' }],
-    selectedColor: 'Honey',
-  };
-
   handleClick(e) {
-    this.setState({ selectedColor: e.target.name });
+    const id = Number(e.target.id);
+    this.setState({ selectColorIndex: id });
   }
 
   render() {
-    const selectedColor = this.state.selectedColor;
-
-    const colors = this.state.colors.map((color, key) => {
-      const isActive = this.state.selectedColor === color.name;
-
-      return (
-        <Button
-          key={key.toString()}
-          type="button"
-          onClick={this.handleClick}
-          isActive={isActive}
-          name={color.name}
-          hex={color.hex}
-        >
-          Select {color.name}
-        </Button>
-      );
-    });
-
     return (
       <StyledColors>
         <Description>
-          Colour: <Selection>{selectedColor}</Selection>
+          Colour: <Selection>{colors[this.state.selectColorIndex].name}</Selection>
         </Description>
         <Wrapper>
-          {colors}
+          {colors.map((color, index) =>
+            (<Button
+              isActive={this.state.selectColorIndex === index}
+              color={color.color}
+              key={index.toString()}
+              id={index}
+              onClick={e => this.handleClick(e)}
+            >
+              {color.name}
+            </Button>),
+          )}
         </Wrapper>
         <Divider />
       </StyledColors>

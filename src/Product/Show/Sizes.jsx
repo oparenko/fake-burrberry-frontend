@@ -78,51 +78,41 @@ const Help = styled.button`
   cursor: pointer;
 `;
 
+const sizes = ['S', 'M', 'L', 'XL'];
+
 class Sizes extends Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    this.state = { selectSizeIndex: 0 };
+    this.onActiveSize = this.onActiveSize.bind(this);
   }
 
-  state = {
-    sizes: ['S', 'M', 'L', 'XL'],
-    selectedSize: 'XL',
-  };
-
-  handleClick(e) {
-    this.setState({ selectedSize: e.target.value });
+  onActiveSize(e) {
+    this.setState({ selectSizeIndex: +e.target.id });
   }
 
   render() {
-    const selectedSize = this.state.selectedSize;
-
-    const buttons = this.state.sizes.map((size, key) => {
-      const isActive = this.state.selectedSize === size;
-
-      return (
-        <RadioButton
-          key={key.toString()}
-          small
-          type="button"
-          onClick={this.handleClick}
-          isActive={isActive}
-          value={size}
-        >
-          {size}
-        </RadioButton>
-      );
-    });
-
     return (
       <StyledSizes>
         <Header>
           <SelectedSize>
-            Size: <Selection>{selectedSize}</Selection>
+            Size: <Selection>{sizes[this.state.selectSizeIndex]}</Selection>
           </SelectedSize>
           <Help type="button">Need size help?</Help>
         </Header>
         <Options>
-          {buttons}
+          {sizes.map((size, index) =>
+            (<RadioButton
+              id={index}
+              name={size}
+              type="button"
+              onClick={e => this.onActiveSize(e)}
+              isActive={this.state.selectSizeIndex === index}
+              key={index.toString()}
+            >
+              {size}
+            </RadioButton>),
+          )}
         </Options>
       </StyledSizes>
     );

@@ -130,7 +130,7 @@ const SubMenu = props =>
       <Link onClick={props.subMenuClose}>Home</Link>
     </Header>
     <Section>
-      <Img src={`${process.env.PUBLIC_URL}/files/section-img.jpg`} alt="" />
+      <Img src={`${process.env.PUBLIC_URL}/img/section-img.jpg`} alt="" />
       <Title>
         {props.categories.categoryName}
       </Title>

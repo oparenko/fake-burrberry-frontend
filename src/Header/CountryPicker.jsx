@@ -46,24 +46,24 @@ const countries = ['United Kingdom (£)', 'Russian Federation (₽)'];
 
 class CountryPicker extends Component {
   state = {
-    value: 0,
+    selectedCountry: 0,
   };
 
   render() {
     const handleSelect = (e) => {
       this.setState({
-        value: e.target.selectedIndex,
+        selectedCountry: e.target.selectedIndex,
       });
     };
 
     return (
       <StyledCountry>
         Shopping in:&nbsp;
-        <Choosen>{countries[this.state.value]}</Choosen>
+        <Choosen>{countries[this.state.selectedCountry]}</Choosen>
         <Arrow src={arrow} />
         <Select onChange={handleSelect}>
           {countries.map(option =>
-            (<option value={option} key={option}>
+            (<option selectedCountry={option} key={option}>
               {option}
             </option>),
           )}

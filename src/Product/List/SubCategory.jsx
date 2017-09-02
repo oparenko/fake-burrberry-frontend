@@ -30,7 +30,7 @@ const Divider = styled.hr`
 const heritage = [
   {
     id: 1,
-    uid: 'the-westminster',
+    slug: 'the-westminster',
     label: 'Relaxed fit',
     name: 'The Westminster – Long Heritage Trench Coat',
     photoUrl:
@@ -41,7 +41,7 @@ const heritage = [
   },
   {
     id: 2,
-    uid: 'the-kensington',
+    slug: 'the-kensington',
     label: 'Classic fit',
     name: 'The Kensington – Mid-Length Heritage Trench Coat',
     photoUrl:
@@ -52,7 +52,7 @@ const heritage = [
   },
   {
     id: 3,
-    uid: 'the-sandringham',
+    slug: 'the-sandringham',
     label: 'Toilered fit',
     name: 'The Sandringham – Mid-length Heritage Trench Coat',
     photoUrl:
@@ -63,7 +63,7 @@ const heritage = [
   },
   {
     id: 4,
-    uid: 'the-chelsea',
+    slug: 'the-chelsea',
     label: 'Slim fit',
     name: 'The Chelsea – Short Heritage Trench Coat',
     photoUrl:
@@ -74,7 +74,7 @@ const heritage = [
   },
   {
     id: 5,
-    uid: 'the-westminster',
+    slug: 'the-westminster',
     label: 'Relaxed fit',
     name: 'The Westminster – Long Heritage Trench Coat',
     photoUrl:
@@ -85,7 +85,7 @@ const heritage = [
   },
   {
     id: 6,
-    uid: 'the-kensington',
+    slug: 'the-kensington',
     label: 'Classic fit',
     name: 'The Kensington – Mid-Length Heritage Trench Coat',
     photoUrl:
@@ -96,7 +96,7 @@ const heritage = [
   },
   {
     id: 7,
-    uid: 'the-sandringham',
+    slug: 'the-sandringham',
     label: 'Toilered fit',
     name: 'The Sandringham – Mid-length Heritage Trench Coat',
     photoUrl:
@@ -107,7 +107,7 @@ const heritage = [
   },
   {
     id: 8,
-    uid: 'the-chelsea',
+    slug: 'the-chelsea',
     label: 'Slim fit',
     name: 'The Chelsea – Short Heritage Trench Coat',
     photoUrl:
@@ -121,7 +121,7 @@ const heritage = [
 const singleBreasted = [
   {
     id: 1,
-    uid: 'the-brighton',
+    slug: 'the-brighton',
     label: 'Online exclusive',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -132,7 +132,7 @@ const singleBreasted = [
   },
   {
     id: 2,
-    uid: 'the-brighton',
+    slug: 'the-brighton',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -143,7 +143,7 @@ const singleBreasted = [
   },
   {
     id: 3,
-    uid: 'the-brighton',
+    slug: 'the-brighton',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -154,7 +154,7 @@ const singleBreasted = [
   },
   {
     id: 4,
-    uid: 'the-brighton',
+    slug: 'the-brighton',
     label: 'New in',
     name: 'The Brighton – Longline Car Coat',
     photoUrl:
@@ -165,7 +165,7 @@ const singleBreasted = [
   },
   {
     id: 5,
-    uid: 'the-camden',
+    slug: 'the-camden',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -176,7 +176,7 @@ const singleBreasted = [
   },
   {
     id: 6,
-    uid: 'the-camden',
+    slug: 'the-camden',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -187,7 +187,7 @@ const singleBreasted = [
   },
   {
     id: 7,
-    uid: 'the-camden',
+    slug: 'the-camden',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -198,7 +198,7 @@ const singleBreasted = [
   },
   {
     id: 8,
-    uid: 'the-camden',
+    slug: 'the-camden',
     label: 'New in',
     name: 'The Camden – Mid-length Car Coat',
     photoUrl:
@@ -217,7 +217,7 @@ export default () =>
         {heritage.map(product =>
           (<div className="col-xs-6 col-md-3" key={product.id}>
             <Card
-              to={`/products/men/trench-coats/${product.uid}`}
+              to={`/products/men/trench-coats/${product.slug}`}
               label={product.label}
               name={product.name}
               photoUrl={product.photoUrl}
@@ -236,7 +236,7 @@ export default () =>
         {singleBreasted.map(product =>
           (<div className="col-xs-6 col-md-3" key={product.id}>
             <Card
-              to={`/products/men/trench-coats/${product.uid}`}
+              to={`/products/men/trench-coats/${product.slug}`}
               label={product.label}
               name={product.name}
               photoUrl={product.photoUrl}

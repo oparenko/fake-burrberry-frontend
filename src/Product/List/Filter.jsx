@@ -16,7 +16,7 @@ const Button = styled.button`
   padding: 1.5rem 1.25rem 1.5rem 0;
   margin-right: 1rem;
   align-items: center;
-  color: ${props => (props.filterOpened ? '#999' : '#171717')};
+  color: ${props => (props.isFilterOpened ? '#999' : '#171717')};
   white-space: nowrap;
   cursor: pointer;
 
@@ -31,7 +31,7 @@ const Button = styled.button`
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    opacity: ${props => (props.filterOpened ? '.3' : '1')};
+    opacity: ${props => (props.isFilterOpened ? '.3' : '1')};
   }
 
   ${props =>
@@ -99,14 +99,14 @@ class Filter extends Component {
     document.removeEventListener('click', this.handleOutsideClick, true);
   }
 
-  toggle(on) {
-    if (on !== this.state.isActive) {
+  toggle = (on = true) => {
+    if (on || on !== this.state.isActive) {
       this.setState(
         prevState => ({ isActive: !prevState.isActive }),
         () => this.props.onClick(this.state.isActive),
       );
     }
-  }
+  };
 
   handleOutsideClick(e) {
     if (this.node && !this.node.contains(e.target)) {
@@ -125,7 +125,7 @@ class Filter extends Component {
           <Button
             type="button"
             isActive={this.state.isActive}
-            filterOpened={this.props.filterOpened}
+            isFilterOpened={this.props.isFilterOpened}
             onClick={this.toggle}
           >
             {this.props.title}
@@ -141,13 +141,13 @@ class Filter extends Component {
 
 Filter.defaultProps = {
   right: false,
-  filterOpened: false,
+  isFilterOpened: false,
 };
 
 Filter.propTypes = {
   onClick: PropTypes.func.isRequired,
   right: PropTypes.bool,
-  filterOpened: PropTypes.bool,
+  isFilterOpened: PropTypes.bool,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };

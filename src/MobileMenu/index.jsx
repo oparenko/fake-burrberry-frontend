@@ -44,7 +44,7 @@ const Categories = styled.div`
 
 const Category = styled.button`
   font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: .875rem;
   font-weight: 400;
   line-height: 1rem;
   display: block;
@@ -74,7 +74,8 @@ const Category = styled.button`
 `;
 
 const Link = styled.a`
-  font-size: 0.875rem;
+  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: .875rem;
   font-weight: 400;
   line-height: 1rem;
   display: block;
@@ -87,9 +88,10 @@ const Link = styled.a`
 `;
 
 const Title = styled.h3`
-  font-size: 0.75rem;
+  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: .75rem;
   font-weight: bold;
-  line-height: 0.875rem;
+  line-height: .875rem;
   margin: 0 0 1.125rem;
   text-transform: uppercase;
 `;

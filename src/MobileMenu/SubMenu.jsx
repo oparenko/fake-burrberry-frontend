@@ -77,7 +77,8 @@ const Title = styled.h3`
 const Nav = styled.nav`padding: 0 0.5rem;`;
 
 const NavLinkStyled = styled(NavLink)`
-  font-size: 0.875rem;
+  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: .875rem;
   font-weight: 400;
   line-height: 1rem;
   display: block;
@@ -130,7 +131,10 @@ const SubMenu = props =>
       <Link onClick={props.subMenuClose}>Home</Link>
     </Header>
     <Section>
-      <Img src={`${process.env.PUBLIC_URL}/img/section-img.jpg`} alt="" />
+      <Img
+        src="https://assets.burberry.com/is/image/Burberryltd/d68dce82ea0a299febf5a35de882c78f0d70ad7d.jpg?$BBY_V2_BASIC$"
+        alt=""
+      />
       <Title>
         {props.categories.categoryName}
       </Title>

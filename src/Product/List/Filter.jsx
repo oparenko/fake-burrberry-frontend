@@ -100,7 +100,7 @@ class Filter extends Component {
   }
 
   toggle = (on = true) => {
-    if (on || on !== this.state.isActive) {
+    if (this.state.isActive !== on || on) {
       this.setState(
         prevState => ({ isActive: !prevState.isActive }),
         () => this.props.onClick(this.state.isActive),
@@ -145,7 +145,6 @@ Filter.defaultProps = {
 };
 
 Filter.propTypes = {
-  onClick: PropTypes.func.isRequired,
   right: PropTypes.bool,
   isFilterOpened: PropTypes.bool,
   title: PropTypes.string.isRequired,

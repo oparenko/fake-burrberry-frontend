@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import arrow from './arrow.svg';
+import arrow from '../Icons/arrow.svg';
 
 const StyledCountry = styled.button`
   font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;

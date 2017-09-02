@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { MaxSmall, MinMedium } from '../Common/Breakpoints';
 import MenuFull from './MenuFull';
+import CountryPicker from './CountryPicker';
 import logo from './logo.svg';
 import hamburger from './hamburger.svg';
-import arrow from './arrow.svg';
 
 const Header = styled.header`
   padding-top: 1.125rem;
@@ -51,29 +51,6 @@ const Menu = styled.button`
   border: 0;
 `;
 
-const Location = styled.button`
-  position: absolute;
-  padding: 0;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: .75rem;
-  line-height: 1rem;
-  color: #999999;
-  background: transparent;
-  border: none;
-  outline: none;
-
-  &:after {
-    content: '';
-    display: inline-block;
-    background-image: url(${arrow});
-    background-size: 12px 6px;
-    width: 12px;
-    height: 6px;
-    margin-left: .5rem;
-  }
-`;
-
 export default () =>
   (<div>
     <Header>
@@ -82,7 +59,7 @@ export default () =>
           <Menu type="button">Menu</Menu>
         </MaxSmall>
         <MinMedium>
-          <Location type="button">Shopping in: United Kingdom (£)</Location>
+          <CountryPicker />
         </MinMedium>
         <LinkStyled to="/">
           <Logo src={logo} alt="Burrberry Logo" />

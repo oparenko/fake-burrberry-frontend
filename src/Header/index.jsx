@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { MaxSmall, MinMedium } from '../Common/Breakpoints';
 import MenuFull from './MenuFull';
 import CountryPicker from './CountryPicker';
 import logo from './logo.svg';
 import hamburger from './hamburger.svg';
 
-const Header = styled.header`
+const StyledHeader = styled.header`
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
 
@@ -23,7 +24,7 @@ const Header = styled.header`
   }
 `;
 
-const Logo = styled.img`
+export const Logo = styled.img`
   display: block;
   text-align: center;
   margin: auto;
@@ -34,7 +35,7 @@ const Logo = styled.img`
   }
 `;
 
-const LinkStyled = styled(Link)`
+export const LinkStyled = styled(Link)`
   text-align: center;
   line-height: 0;
 `;
@@ -51,22 +52,37 @@ const Menu = styled.button`
   border: 0;
 `;
 
-export default () =>
-  (<div>
-    <Header>
-      <div className="container">
-        <MaxSmall>
-          <Menu type="button">Menu</Menu>
-        </MaxSmall>
+class Header extends Component {
+  state = {};
+
+  render() {
+    return (
+      <div>
+        <StyledHeader>
+          <div className="container">
+            <MaxSmall>
+              <Menu type="button" onClick={this.props.handleMenuOpen}>
+                Menu
+              </Menu>
+            </MaxSmall>
+            <MinMedium>
+              <CountryPicker />
+            </MinMedium>
+            <LinkStyled to="/">
+              <Logo src={logo} alt="Burrberry Logo" />
+            </LinkStyled>
+          </div>
+        </StyledHeader>
         <MinMedium>
-          <CountryPicker />
+          <MenuFull />
         </MinMedium>
-        <LinkStyled to="/">
-          <Logo src={logo} alt="Burrberry Logo" />
-        </LinkStyled>
       </div>
-    </Header>
-    <MinMedium>
-      <MenuFull />
-    </MinMedium>
-  </div>);
+    );
+  }
+}
+
+Header.propTypes = {
+  handleMenuOpen: PropTypes.func.isRequired,
+};
+
+export default Header;

@@ -88,7 +88,8 @@ class Sizes extends Component {
   }
 
   onActiveSize(e) {
-    this.setState({ selectSizeIndex: +e.target.id });
+    const id = Number(e.target.id);
+    this.setState({ selectSizeIndex: id });
   }
 
   render() {

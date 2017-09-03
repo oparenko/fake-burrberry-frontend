@@ -99,14 +99,14 @@ class Filter extends Component {
     document.removeEventListener('click', this.handleOutsideClick, true);
   }
 
-  toggle = (on = true) => {
-    if (this.state.isActive !== on || on) {
+  toggle(on) {
+    if (this.state.isActive !== on) {
       this.setState(
         prevState => ({ isActive: !prevState.isActive }),
         () => this.props.onClick(this.state.isActive),
       );
     }
-  };
+  }
 
   handleOutsideClick(e) {
     if (this.node && !this.node.contains(e.target)) {

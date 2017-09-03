@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MinLarge } from './Common/Breakpoints';
+import Preferences from './Preferences';
+import { MinLarge } from '../Common/Breakpoints';
 
 const Footer = styled.footer`
   margin-top: 4rem;
@@ -57,38 +58,6 @@ const Link = styled.a`
     padding-bottom: 0;
   }
 `;
-
-const Preferences = styled.div`
-  display: block;
-
-  @media screen and (min-width: 48rem) {
-    display: flex;
-  }
-`;
-
-const Button = styled.button`
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0;
-  color: #171717;
-  border: none;
-  background-color: inherit;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  font-weight: 400;
-  line-height: 1rem;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 48rem) {
-    margin-right: 1.5rem;
-    margin-bottom: 0;
-  }
-`;
-
-const Caption = styled.span`color: #999;`;
 
 const NeedHelp = styled.div`
   text-align: center;
@@ -185,14 +154,7 @@ export default () =>
           </MinLarge>
         </div>
       </Navigation>
-      <Preferences>
-        <Button href="#">
-          <Caption>Shipping country:</Caption> Russian Federation
-        </Button>
-        <Button href="#">
-          <Caption>Language:</Caption> English
-        </Button>
-      </Preferences>
+      <Preferences />
       <NeedHelp>
         <NeedHelpTitle>Need help?</NeedHelpTitle>
         <NeedHelpLink href="#">Find out more and contact us</NeedHelpLink>

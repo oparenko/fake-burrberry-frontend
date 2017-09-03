@@ -19,13 +19,16 @@ const Button = styled.button`
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: .875rem;
+  cursor: pointer;
 
   @media screen and (min-width: 62rem) {
     display: inline-block;
     max-width: 14.5rem;
   }
 
-  ${props => props.primary && css`
+  ${props =>
+    props.primary &&
+    css`
     width: 100%;
     margin-bottom: 1rem;
     padding-top: 1rem;
@@ -39,14 +42,14 @@ const Button = styled.button`
       margin-right: .5rem;
       margin-bottom: 0;
     }
-    `}
-
-  ${props => props.secondary && css`
+    `} ${props =>
+  props.secondary &&
+      css`
     width: 100%;
     margin-bottom: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border: solid 1px #999;
+    border: solid 1px #171717;
     border-radius: .125rem;
     background-color: transparent;
 
@@ -54,9 +57,9 @@ const Button = styled.button`
       margin-bottom: 0;
       margin-left: .5rem;
     }
-`}
-
-  ${props => props.tertiary && css`
+`} ${props =>
+  props.tertiary &&
+      css`
     padding: 0;
     text-align: left;
     border: none;
@@ -66,13 +69,12 @@ const Button = styled.button`
     @media screen and (min-width: 62rem) {
     display: none;
   }
-  `}
+  `};
 `;
 
-export default () => (
-  <Actions>
+export default () =>
+  (<Actions>
     <Button primary>Select a size</Button>
     <Button secondary>Find in store</Button>
     <Button tertiary>Need size help?</Button>
-  </Actions>
-);
+  </Actions>);
